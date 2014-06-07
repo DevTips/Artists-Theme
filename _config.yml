@@ -1,0 +1,15 @@
+# Site settings
+title: Artists Theme
+email: artist@email
+description: "Thinker // Designer // YouTuber"
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+port: 9000
+
+sass:
+  sass_dir: assets/css
+  style: :compressed
