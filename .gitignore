@@ -1,14 +1,28 @@
-# http://www.gnu.org/software/automake
+# Created by http://www.gitignore.io
 
-Makefile.in
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# http://www.gnu.org/software/autoconf
+# Icon must end with two \r
+Icon
 
-/autom4te.cache
-/aclocal.m4
-/compile
-/configure
-/depcomp
-/install-sh
-/missing
-/stamp-h1
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### Jekyll ###
+_site/
