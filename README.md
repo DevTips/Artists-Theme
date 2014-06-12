@@ -1,5 +1,8 @@
 # Artists Theme
 
+This site is being built on YouTube, one week at a time. See all the videos up to date here: [How to build a professional website from start to finish](https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI)
+
+
 ![The Design](/assets/img/the_design.jpg)
 
 ---
