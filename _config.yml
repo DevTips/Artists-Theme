@@ -13,4 +13,4 @@ port: 9000
 
 sass:
   sass_dir: assets/css
-  style: :compressed
+  style: :nested
