@@ -1,21 +1,16 @@
 footer
-  background: url(../img/hero-bg.jpg) center center
-  background-size: cover
+  background: url(../img/logo.svg) no-repeat, url(../img/hero-bg.jpg) center center
+  background-size: 50px 50px, cover
+  background-position: 30px 50px, 50% 50%
+  background-blend-mode: overlay, normal
   
   .lockup
     padding: 50px 30px
     +clearfix
     
-    .logo
-      +size(50px)
-      float: left
-      margin-right: 30px
-      
-      path
-        fill: rgba(0,0,0,0.5)
-      
     .content-wrap
       float: left
+      margin-left: 80px
       
       .copyright
         margin: 0
