@@ -6,10 +6,10 @@ email: artist@email
 #MENU ITEM LIST
 
 menu:
-- {name: About Me, url: '#'}
-- {name: Work, url: '#'}
-- {name: Clients, url: '#'}
-- {name: Contact, url: '#'}
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+- {name: Clients, url: '#clients'}
+- {name: Contact, url: '#contact'}
 
 #SKILL LIST 
 
