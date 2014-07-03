@@ -15,14 +15,14 @@
   
   
   <div class="blurb">
-    {{ site.data.portfolio.blurb }}
+    {{ site.data.settings.blurb }}
   </div>
   
-  
+  {% if site.data.settings.skills %}
   
   <div class="skill-lockup">
 
-    {% for skill in site.data.portfolio.skills %}
+    {% for skill in site.data.settings.skills %}
 
       <div class="skill-unit">
         <div class="skill-label">{{ skill.name }}</div>
@@ -35,5 +35,7 @@
     {% endfor %}
     
   </div>
+  
+  {% endif %}
 
 </section>
