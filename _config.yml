@@ -7,3 +7,4 @@ port: 9000
 sass:
   sass_dir: assets/css
   style: :nested
+exclude: [the_design.psd,README.md,LICENSE]
