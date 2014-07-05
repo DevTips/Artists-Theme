@@ -37,3 +37,23 @@ skills:
 - {name: Visual Design, value: '5'}
 - {name: UX Design, value: '8'}
 - {name: Programming, value: '6'}
+
+
+
+
+#-------------------------------
+# Work Section
+
+projects:
+- {name: TYPO International Design Talks, folder: 'proj-1'}
+- {name: City-IN website concept, folder: 'proj-2'}
+- {name: Crispy Icons, folder: 'proj-3'}
+- {name: Flat Mobile UI/UX Concept, folder: 'proj-4'}
+- {name: Fresh It Up, folder: 'proj-5'}
+- {name: Timeline Page, folder: 'proj-6'}
+- {name: Weather Dashboard, folder: 'proj-7'}
+- {name: Stripes & Co, folder: 'proj-8'}
+
+
+
+
