@@ -1,19 +1,42 @@
 ---
 ---
 
-/* HEDER PATH CONFIGURATIONS */ 
+///////////////////////  --
+//                   //  ----
+//      SETTINGS     //  ------
+//                   //  ----
+///////////////////////  --
 
-$logo-path: '{{ site.data.portfolio.logo | prepend: site.data.portfolio.img_default_path | prepend: site.data.portfolio.absolute_url  }}'
-$hero-path: '{{ site.data.portfolio.bg-img | prepend: site.data.portfolio.img_default_path | prepend: site.data.portfolio.absolute_url  }}'
+//------------------------------------------------
+// Transition the image paths from the settings file to usable SASS variables
 
-/* ABOUT PATH CONFIGURATIONS */ 
+$logo-path: '{{ site.data.settings.logo | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}'
+$hero-path: '{{ site.data.settings.bg-img | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}'
+$avatar-path: '{{ site.data.settings.avatar | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url }}'
+//------------------------------------------------
+// Set some colors as sass variables 
 
-$avatar-path: '{{ site.data.portfolio.avatar | prepend: site.data.portfolio.img_default_path | prepend: site.data.portfolio.absolute_url }}'
 
-/* FOOTER PATH CONFIGURATIONS */
+$accent: #c99065
+$accent-light: #e1c184
+$bgcolor: #e5eaee
+
+$documentBackgroundColor: #fff
+$headlineColor: #333
+$textColor: #666
+$linkColor: $accent
+$selectionColor: rgb(255,255,158)
 
 
-/* IMPORTS */
+
+
+
+
+///////////////////////////  --
+//                       //  ----
+//      SASS IMPORTS     //  ------
+//                       //  ----
+///////////////////////////  --
 
 @import '1-tools/-tools-dir'
 @import '2-base/-base-dir'
