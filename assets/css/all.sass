@@ -11,8 +11,9 @@
 // Transition the image paths from the settings file to usable SASS variables
 
 $logo-path: '{{ site.data.settings.logo | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}'
-$hero-path: '{{ site.data.settings.bg-img | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}'
+$hero-path: '{{ site.data.settings.background-image | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}'
 $avatar-path: '{{ site.data.settings.avatar | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url }}'
+
 //------------------------------------------------
 // Set some colors as sass variables 
 
