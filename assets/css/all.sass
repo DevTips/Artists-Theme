@@ -3,12 +3,12 @@
 
 /* HEDER PATH CONFIGURATIONS */ 
 
-$logo-path: '{{ site.data.portfolio.logo | prepend: site.data.portfolio.absolute_url  }}'
-$hero-path: '{{ site.data.portfolio.bg-img | prepend: site.data.portfolio.absolute_url  }}'
+$logo-path: '{{ site.data.portfolio.logo | prepend: site.data.portfolio.img_default_path | prepend: site.data.portfolio.absolute_url  }}'
+$hero-path: '{{ site.data.portfolio.bg-img | prepend: site.data.portfolio.img_default_path | prepend: site.data.portfolio.absolute_url  }}'
 
 /* ABOUT PATH CONFIGURATIONS */ 
 
-$avatar-path: '{{ site.data.portfolio.avatar | prepend: site.data.portfolio.absolute_url }}'
+$avatar-path: '{{ site.data.portfolio.avatar | prepend: site.data.portfolio.img_default_path | prepend: site.data.portfolio.absolute_url }}'
 
 /* FOOTER PATH CONFIGURATIONS */
 

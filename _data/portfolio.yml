@@ -29,9 +29,10 @@ skills:
 
 
 # Change the site default images and content here!
-logo: '/assets/img/logo.svg'
-bg-img: '/assets/img/hero-bg.jpg'
+img_default_path: /assets/img/  #The default path of your images.
+logo: 'logo.svg'                #The name of your images
+bg-img: 'hero-bg.jpg'
+avatar: 'travitar.jpg'
 
-avatar: '/assets/img/travitar.jpg'
 blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>
 
