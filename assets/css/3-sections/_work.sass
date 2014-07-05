@@ -1,13 +1,7 @@
-.alt-section
-  background: $bgcolor
-  
-  h3
-    color: darken($accent, 0%)
-
 .thumb-container
   max-width: 960px
   margin: 0px auto
-  padding-bottom: 100px
+  
   +clearfix
   
   .thumb-unit
@@ -49,20 +43,12 @@
         text-transform: uppercase
         font-size: 24px
         line-height: 1.2
-        
-      .icon-zoom
-        +size(40px)
-        margin: 0px auto
-        
-        path
-          fill: white
       
     &:hover .thumb-overlay
       +position(absolute, 0% 0px null 0px)
       opacity: 1
       +transform(rotateX(0deg))
     
-
   
     
     
