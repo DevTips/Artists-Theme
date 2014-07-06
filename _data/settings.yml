@@ -1,11 +1,16 @@
 #-------------------------------
 # General Site Settings
 
+absolute_url: /Artists-Theme
 title: Artists Theme
 description: Thinker // Designer // YouTuber
 email: artist@email
 
 
+# Change the site default images and content here!
+img_default_path: /assets/img/  #The default path of your images.
+
+#Default images
 logo: 'logo.svg'
 background-image: 'hero-bg.jpg'
 
@@ -55,5 +60,5 @@ projects:
 - {name: Stripes & Co, folder: 'proj-8'}
 
 
-
+blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>
 

@@ -5,6 +5,4 @@ permalink: pretty
 
 port: 9000
 
-sass:
-  sass_dir: assets/css
-  style: :nested
+exclude: [css/_sass,the_design.psd,README.md,LICENSE,Gruntfile.js,package.json,node_modules]

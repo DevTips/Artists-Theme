@@ -1,3 +1,5 @@
+---
+---
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -273,7 +275,7 @@ header, footer {
 header {
   height: 450px;
   background-position: 30px 20px, 50% 50%;
-  background-image: url(/assets/img/{{ site.data.settings.logo }}), url(/assets/img/{{ site.data.settings.background-image }}); }
+  background-image: url("{{ site.data.settings.logo | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}"), url("{{ site.data.settings.background-image | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}"); }
   header .logo {
     height: 50px;
     width: 50px;
@@ -311,7 +313,7 @@ header {
     line-height: 1; }
 
 footer {
-  background-image: url(/assets/img/{{ site.data.settings.logo }}), url(/assets/img/{{ site.data.settings.background-image }}); }
+  background-image: url("{{ site.data.settings.logo | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}"), url("{{ site.data.settings.background-image | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url  }}"); }
   footer .lockup {
     padding: 50px 30px; }
     footer .lockup:after {
@@ -363,7 +365,7 @@ footer {
   -ms-flex-pack: justify; }
   .face-lockup .face-img {
     border-radius: 50%;
-    background-image: url(/assets/img/{{ site.data.settings.avatar }});
+    background-image: url("{{ site.data.settings.avatar | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url }}");
     height: 200px;
     width: 200px;
     -webkit-box-ordinal-group: 3;
