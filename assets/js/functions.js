@@ -1,5 +1,5 @@
 $(function() {
-	smoothScrool(1000);
+	smoothScrool(300);
 });
 
 // smoothScroll function is applied from the document ready function
