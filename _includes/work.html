@@ -8,7 +8,7 @@
     {% for project in site.data.settings.projects %}
 
     <div class="thumb-unit">
-      <img class="thumb-image" src="{{ project.fileName | prepend: project.folder | prepend: site.data.settings.absolute_url }}"/>
+      <img class="thumb-image" src="{{ project.fileName | prepend: project.folder | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url }}"/>
       <div class="thumb-overlay">
         <strong>{{ project.name }}</strong>
       </div>

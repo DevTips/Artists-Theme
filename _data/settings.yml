@@ -1,18 +1,18 @@
 #-------------------------------
 # General Site Settings
 
-absolute_url: Artists-Theme/
+absolute_url: /Artists-Theme
 title: Artists Theme
 description: Thinker // Designer // YouTuber
 email: artist@email
 
 
 # Change the site default images and content here!
-img_default_path: /assets/img/  #The default path of your images.
+img_default_path: /assets/img  #The default path of your images.
 
 #Default images
-logo: 'logo.svg'
-background-image: 'hero-bg.jpg'
+logo: '/logo.svg'
+background-image: '/hero-bg.jpg'
 
 
 menu:
@@ -27,7 +27,7 @@ menu:
 #-------------------------------
 # About Section
 
-avatar: 'travitar.jpg'
+avatar: '/travitar.jpg'
 
 
 blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>
@@ -50,14 +50,14 @@ skills:
 # Work Section
 
 projects:
-- {name: TYPO International Design Talks, folder: 'assets/img/work/proj-1/', fileName: 'thumb.jpg'}
-- {name: City-IN website concept, folder: 'assets/img/work/proj-2/', fileName: 'thumb.jpg'}
-- {name: Crispy Icons, folder: 'assets/img/work/proj-3/', fileName: 'thumb.jpg'}
-- {name: Flat Mobile UI/UX Concept, folder: 'assets/img/work/proj-4/', fileName: 'thumb.jpg'}
-- {name: Fresh It Up, folder: 'assets/img/work/proj-5/', fileName: 'thumb.jpg'}
-- {name: Timeline Page, folder: 'assets/img/work/proj-6/', fileName: 'thumb.jpg'}
-- {name: Weather Dashboard, folder: 'assets/img/work/proj-7/', fileName: 'thumb.jpg'}
-- {name: Stripes & Co, folder: 'assets/img/work/proj-8/', fileName: 'thumb.jpg'}
+- {name: TYPO International Design Talks, folder: '/work/proj-1', fileName: '/thumb.jpg'}
+- {name: City-IN website concept, folder: '/work/proj-2', fileName: '/thumb.jpg'}
+- {name: Crispy Icons, folder: '/work/proj-3', fileName: '/thumb.jpg'}
+- {name: Flat Mobile UI/UX Concept, folder: '/work/proj-4', fileName: '/thumb.jpg'}
+- {name: Fresh It Up, folder: '/work/proj-5', fileName: '/thumb.jpg'}
+- {name: Timeline Page, folder: '/work/proj-6', fileName: '/thumb.jpg'}
+- {name: Weather Dashboard, folder: '/work/proj-7', fileName: '/thumb.jpg'}
+- {name: Stripes & Co, folder: '/work/proj-8', fileName: '/thumb.jpg'}
 
 
 blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>
