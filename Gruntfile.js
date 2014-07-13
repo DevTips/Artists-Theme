@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['assets/_sass/**/*.sass','assets/_sass/**/*.scss'],
-        tasks: ['sass']
+        tasks: ['sass-compile']
       },
       script: {
         files: ['assets/js/*.js'],
@@ -59,8 +59,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass','file_append','jekyll']);
-  grunt.registerTask('sass', ['sass','file_append','jekyll']);
+  grunt.registerTask('default', ['sass-compile','file_append','jekyll']);
+  grunt.registerTask('sass-compile', ['sass','file_append','jekyll']);
   grunt.registerTask('jeky-build', ['jekyll']);
   grunt.registerTask('build', ['sass','file_append','jekyll']);
   grunt.registerTask('serve', ['connect','watch']);
