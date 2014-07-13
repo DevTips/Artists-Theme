@@ -12,7 +12,8 @@
     overflow: hidden
     cursor: pointer
     +perspective(300)
-
+    cursor: pointer
+    +perspective(300)
 
     @media screen and (max-width: 760px)
       width: 50%
@@ -21,17 +22,18 @@
       width: 115%
 
     .thumb-overlay
-      +position(absolute, -50% 0px null 0px)
+      +position(absolute, 0% 0px null 0px)
       height: 100%
       background: fade-out($accent, 0.1)
       text-align: center
-      +transition
       +display(flex)
       +align-items(center)
       +justify-content(space-around)
+      +transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
       opacity: 0
       +transform(rotateX(90deg))
       +transform-origin(center bottom)
+      +transition(opacity, 300ms, ease-in, 500ms)
 
       strong
         display: block
@@ -46,3 +48,10 @@
       +position(absolute, 0% 0px null 0px)
       opacity: 1
       +transform(rotateX(0deg))
+
+    &:hover
+      z-index: 2
+
+      .thumb-overlay
+        @extend %bounceOut
+        opacity: 1

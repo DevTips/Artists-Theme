@@ -6,6 +6,11 @@ _Code contributions via pull request:_
 - [iiSa3](https://github.com/iiSa3)
 - [Killua13](https://github.com/Killua13)
 - [iMoritz](https://github.com/iMoritz)
+- [jgrimshaw](https://github.com/jgrimshaw)
+- [boodaah](https://github.com/boodaah)
+- [meecrobe](https://github.com/meecrobe)
+- [rkpasia](http://rkpasia.github.io)
+- [arielsafari](https://github.com/arielsafari)
 
 
 _A big thank you to these creators for contributing sample projects for the "work" section:_
