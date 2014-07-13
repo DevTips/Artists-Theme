@@ -1,20 +1,21 @@
 <section class="alt-section">
-  
+
   <h3 id="work">Work</h3>
-  
+
   <div class="thumb-container">
-    
-    
+
+
     {% for project in site.data.settings.projects %}
-    
-    <div class="thumb-unit" style="background-image: url({{ site.data.settings.absolute_url }}/assets/img/work/{{project.folder}}/thumb.jpg);">
+
+    <div class="thumb-unit">
+      <img class="thumb-image" src="{{ project.fileName | prepend: project.folder | prepend: site.data.settings.absolute_url }}"/>
       <div class="thumb-overlay">
         <strong>{{ project.name }}</strong>
       </div>
     </div>
-    
+
     {% endfor %}
-    
+
   </div>
-  
+
 </section>
