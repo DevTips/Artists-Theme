@@ -27,5 +27,10 @@ Temporary Items
 ### Jekyll ###
 _site/
 
+
 ### Sass ###
 .sass-cache
+
+#GRUNT
+
+node_modules
