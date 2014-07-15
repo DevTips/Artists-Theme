@@ -22,18 +22,13 @@
       padding-top: 26%
     
     .thumb-overlay
-      +position(absolute, 0% 0px null 0px)
-      height: 100%
+      +position(absolute, 0px)
       background: fade-out($accent, 0.1)
       text-align: center
-      +display(flex)
       +align-items(center)
       +justify-content(space-around)
-      +transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
-      opacity: 0
-      +transition(opacity, 300ms, ease-in, 500ms)
-      
-      
+      display: none
+            
       strong
         display: block
         padding: 0px 20px
@@ -48,7 +43,7 @@
       
       .thumb-overlay
         @extend %bounceOut
-        opacity: 1
+        +display(flex)
       
     
     
