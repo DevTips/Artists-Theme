@@ -6,7 +6,7 @@
 
 
 @include keyframes(bounceOut) { 
-  0% { @include transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
+  0% { @include transform(matrix3d(0.01, 0, 0, 0, 0, 0.01, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
   2.222222% { @include transform(matrix3d(0.22857, 0.05116, 0, 0, 0.0338, 0.22857, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
   4.444444% { @include transform(matrix3d(0.45383, 0.15188, 0, 0, 0.09925, 0.45383, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
   6.666667% { @include transform(matrix3d(0.65416, 0.23546, 0, 0, 0.1534, 0.65416, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
