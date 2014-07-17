@@ -1,13 +1,13 @@
 
 
 %bounceOut {
-  @include animation(bounceOut 1s linear both);
+  @include animation(bounceOut 25s linear both);
 }
 
 
 @include keyframes(bounceOut) { 
-  0% { @include transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
-  2.222222% { @include transform(matrix3d(0.22857, 0.05116, 0, 0, 0.0338, 0.22857, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
+  0% { @include transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); height: 0%; width: 0%;}
+  2.222222% { @include transform(matrix3d(0.22857, 0.05116, 0, 0, 0.0338, 0.22857, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); height: 100%; width: 100%;}
   4.444444% { @include transform(matrix3d(0.45383, 0.15188, 0, 0, 0.09925, 0.45383, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
   6.666667% { @include transform(matrix3d(0.65416, 0.23546, 0, 0, 0.1534, 0.65416, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
   8.888889% { @include transform(matrix3d(0.81817, 0.27003, 0, 0, 0.17654, 0.81817, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
@@ -51,5 +51,5 @@
   93.333333% { @include transform(matrix3d(0.99994, -0.00001, 0, 0, -0.00001, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
   95.555556% { @include transform(matrix3d(0.99993, 0, 0, 0, 0, 0.99993, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
   97.777778% { @include transform(matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); }
-  100% { @include transform(matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); } 
+  100% { @include transform(matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)); height: 100%; width: 100%;} 
 }
