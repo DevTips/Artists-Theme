@@ -23,13 +23,12 @@
     
     .thumb-overlay
       +position(absolute, 0px)
-      background: fade-out($accent, 0.1)
-      text-align: center
       +align-items(center)
       +justify-content(space-around)
       +display(flex)
-      +size(0%)
-      overflow: hidden
+      background: fade-out($accent, 0.1)
+      text-align: center
+      @extend %animationstart-bounceOut
 
       strong
         display: block
