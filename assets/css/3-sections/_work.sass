@@ -16,19 +16,21 @@
       repeat: no-repeat
       size: cover
     +perspective(300)
+    @if $animation != "bounceOut"
+      overflow: hidden
       
     @media screen and (max-width: 760px)
       width: 50%
       padding-top: 26%
     
     .thumb-overlay
-      +position(absolute, 0px)
+      +position(absolute)
       +align-items(center)
       +justify-content(space-around)
       +display(flex)
       background: fade-out($accent, 0.1)
       text-align: center
-      @extend %animationstart-bounceOut
+      @extend %animationstart_#{$animation}
 
       strong
         display: block
@@ -43,7 +45,7 @@
       z-index: 2
       
       .thumb-overlay
-        @extend %bounceOut
+        @extend %#{$animation}
     
     
     

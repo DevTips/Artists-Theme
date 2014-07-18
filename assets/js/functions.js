@@ -1,9 +1,9 @@
 $(function() {
-	smoothScrool(300);
+	smoothScroll(300);
 });
 
 // smoothScroll function is applied from the document ready function
-function smoothScrool (duration) {
+function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
 
 	    var target = $( $(this).attr('href') );

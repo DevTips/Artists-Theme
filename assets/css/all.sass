@@ -10,9 +10,17 @@
 //------------------------------------------------
 // Transition the image paths from the settings file to usable SASS variables
 
-$logo-path: '{{ site.data.settings.logo }}'
-$hero-path: '{{ site.data.settings.background-image }}'
-$avatar-path: '{{ site.data.settings.avatar }}'
+$logo-path: 'logo.svg' // {{ site.data.settings.logo }}
+$hero-path: 'hero-bg.jpg' // {{ site.data.settings.background-image }}
+$avatar-path: 'travitar.jpg' // {{ site.data.settings.avatar }}
+
+//------------------------------------------------
+// Get the defined 'animation' from the settings file to a usable SASS variable
+// I am using Jekyll 2.1.1 - cannot define variables as used in the videos;
+// Need a more glamarous solution to that issue
+// See '1-tools/animations' for possible settings
+
+$animation: "topDown" // {{ site.data.settings.animation }}
 
 //------------------------------------------------
 // Set some colors as sass variables 

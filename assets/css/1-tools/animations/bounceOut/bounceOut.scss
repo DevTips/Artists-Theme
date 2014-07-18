@@ -1,18 +1,20 @@
 /* 
   Animation: bounceOut
-  Source: Bounce.Js
-*/
+  Source: Bounce.Js */
+
 // Initial Class
-%animationstart-bounceOut{
+%animationstart_bounceOut{
   height: 0%;
   width: 0%;
+  top: 0%;
   overflow: hidden;
 }
 
 // Animation Class
 %bounceOut {
-  -webkit-animation: animation 25000ms linear both;
-  animation: animation 25000ms linear both;
+  -webkit-animation: animation 1s linear both;
+  animation: animation 1s linear both;
+  z-index: 2;
 }
 
 @-webkit-keyframes animation { 

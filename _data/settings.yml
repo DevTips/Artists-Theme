@@ -25,7 +25,7 @@ menu:
 avatar: 'travitar.jpg'
 
 
-blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>
+blurb: '<p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>'
 
 
 skills:
@@ -43,6 +43,8 @@ skills:
 
 #-------------------------------
 # Work Section
+
+animation: "bounceOut"
 
 projects:
 - {name: TYPO International Design Talks, folder: 'proj-1'}
