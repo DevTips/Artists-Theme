@@ -29,3 +29,8 @@ _site/
 
 ### Sass ###
 .sass-cache
+
+### Build VM ###
+.vagrant/*
+_logs/*
+
