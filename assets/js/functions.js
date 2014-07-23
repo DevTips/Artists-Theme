@@ -1,18 +1,10 @@
 $(function() {
-<<<<<<< HEAD
 	smoothScroll(300);
+	workBelt();
 });
 
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
-=======
-	smoothScrool(300);
-	workBelt();
-});
-
-
-function smoothScrool (duration) {
->>>>>>> upstream/master
 	$('a[href^="#"]').on('click', function(event) {
 
 	    var target = $( $(this).attr('href') );
@@ -28,6 +20,9 @@ function smoothScrool (duration) {
 
 
 function workBelt() {
+  
+  $(".trigger").remove();
+  $(".return").remove();
 
   $('.thumb-unit').click(function() {
     $('.work-belt').css('left','-100%');

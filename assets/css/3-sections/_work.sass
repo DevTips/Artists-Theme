@@ -1,6 +1,26 @@
 .section-work
   overflow-x: hidden
-  
+
+/* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled. */
+.return
+  display: none
+
+  &:checked ~ .work-belt
+    left: 0%
+
+    .work-wrap .work-container
+      display: none 
+
+.trigger
+  display: none
+
+  &:checked ~ .work-belt
+    left: -100%
+
+    .work-wrap .work-container
+      display: block
+/* End of gross / hackey CSS */
+
 .work-belt
   width: 200%
   position: relative
