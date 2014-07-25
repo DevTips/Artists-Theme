@@ -1,10 +1,10 @@
 $(function() {
-	smoothScrool(300);
+	smoothScroll(300);
 	workBelt();
 });
 
 
-function smoothScrool (duration) {
+function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
 
 	    var target = $( $(this).attr('href') );
@@ -25,7 +25,7 @@ function workBelt() {
     $('.work-belt').css('left','-100%');
     $('.work-container').show();
   });
-  
+
   $('.work-return').click(function() {
     $('.work-belt').css('left','0%');
     $('.work-container').hide(800);
