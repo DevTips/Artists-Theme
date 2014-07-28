@@ -10,7 +10,7 @@
 
   <title></title>
   
-  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="{{ "/assets/css/all.css" | prepend: site.data.settings.absolute_url }}">
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </head>
@@ -26,7 +26,7 @@
 {% include footer.html %}
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="assets/js/functions.js"></script>
+<script src="{{ "/assets/js/functions.js" | prepend: site.data.settings.absolute_url }}"></script>
 <!-- REMEMBER TO ADD ANALYTICS! -->
 </body>
 </html>

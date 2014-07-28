@@ -1,28 +1,33 @@
 <section class="alt-section section-work">
-  
+
   <h3 id="work">Work</h3>
-  
+
   <div class="work-belt">
-    
+
     <div class="thumb-wrap">
+
       <div class="thumb-container">
-      {% for project in site.data.settings.projects %}
-      <div class="thumb-unit" data-folder="{{project.folder}}" style="background-image: url(/assets/img/work/{{project.folder}}/thumb.jpg);"> 
-        <div class="thumb-overlay">
-          <strong>{{ project.name }}</strong>
+        {% for project in site.data.settings.projects %}
+
+        <div class="thumb-unit" data-folder="{{ project.folder }}">
+          <img class="thumb-image" src="{{ project.fileName | prepend: project.folder | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url }}"/>
+          <div class="thumb-overlay">
+            <strong>{{ project.name }}</strong>
+          </div>
         </div>
+
+        {% endfor %}
       </div>
-      {% endfor %}
+
     </div>
-    </div>
-    
+
     <div class="work-wrap">
       <div class="work-container">
-      <div class="work-return">{% include icons/icon-back.html %}</div>
-      <h4 class="project-title">Typo International Design Talks</h4>
-      <div class="project-load"></div>
+        <div class="work-return">{% include icons/icon-back.html %}</div>
+        <h4 class="project-title"></h4>
+        <div class="project-load"></div>
+      </div>
     </div>
-    </div>
-    
+
   </div>
 </section>

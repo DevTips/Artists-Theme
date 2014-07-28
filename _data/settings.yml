@@ -1,13 +1,18 @@
 #-------------------------------
 # General Site Settings
 
+absolute_url: 
 title: Artists Theme
 description: Thinker // Designer // YouTuber
 email: artist@email
 
 
-logo: 'logo.svg'
-background-image: 'hero-bg.jpg'
+# Change the site default images and content here!
+img_default_path: /assets/img  #The default path of your images.
+
+#Default images
+logo: '/logo.svg'
+background-image: '/hero-bg.jpg'
 
 
 menu:
@@ -22,7 +27,7 @@ menu:
 #-------------------------------
 # About Section
 
-avatar: 'travitar.jpg'
+avatar: '/travitar.jpg'
 
 
 blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>
@@ -45,15 +50,14 @@ skills:
 # Work Section
 
 projects:
-- {name: TYPO International Design Talks, folder: 'proj-1'}
-- {name: City-IN website concept, folder: 'proj-2'}
-- {name: Crispy Icons, folder: 'proj-3'}
-- {name: Flat Mobile UI/UX Concept, folder: 'proj-4'}
-- {name: Fresh It Up, folder: 'proj-5'}
-- {name: Timeline Page, folder: 'proj-6'}
-- {name: Weather Dashboard, folder: 'proj-7'}
-- {name: Stripes & Co, folder: 'proj-8'}
+- {name: TYPO International Design Talks, folder: '/work/proj-1', fileName: '/thumb.jpg'}
+- {name: City-IN website concept, folder: '/work/proj-2', fileName: '/thumb.jpg'}
+- {name: Crispy Icons, folder: '/work/proj-3', fileName: '/thumb.jpg'}
+- {name: Flat Mobile UI/UX Concept, folder: '/work/proj-4', fileName: '/thumb.jpg'}
+- {name: Fresh It Up, folder: '/work/proj-5', fileName: '/thumb.jpg'}
+- {name: Timeline Page, folder: '/work/proj-6', fileName: '/thumb.jpg'}
+- {name: Weather Dashboard, folder: '/work/proj-7', fileName: '/thumb.jpg'}
+- {name: Stripes & Co, folder: '/work/proj-8', fileName: '/thumb.jpg'}
 
 
-
-
+blurb: <p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>
