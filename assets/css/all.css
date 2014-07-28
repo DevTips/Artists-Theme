@@ -1,5 +1,7 @@
 ---
 ---
+---
+---
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -778,6 +780,55 @@ td, th {
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
+.loader:before,
+.loader:after,
+.loader {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out; }
+
+.loader {
+  margin: 8em auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation-delay: 0.16s;
+  animation-delay: 0.16s; }
+
+.loader:before {
+  left: -3.5em; }
+
+.loader:after {
+  left: 3.5em;
+  -webkit-animation-delay: 0.32s;
+  animation-delay: 0.32s; }
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0; }
+
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff; }
+
+  40% {
+    box-shadow: 0 2.5em 0 0 #FFF; } }
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff; }
+
+  40% {
+    box-shadow: 0 2.5em 0 0 #FFF; } }
 /*	Typography presets
  * ------------------------------------	 */
 .gigantic, .huge, .large, .bigger, .big,
@@ -1093,6 +1144,21 @@ footer {
     width: 220px; }
     .skill-lockup .skill-unit {
       width: 220px; } }
+.section-work {
+  overflow-x: hidden; }
+
+.work-belt {
+  width: 200%;
+  position: relative;
+  left: 0%;
+  -webkit-transition: all, 800ms;
+  -moz-transition: all, 800ms;
+  transition: all, 800ms; }
+
+.thumb-wrap, .work-wrap {
+  width: 50%;
+  float: left; }
+
 .thumb-container {
   max-width: 960px;
   margin: 0px auto; }
@@ -1187,3 +1253,41 @@ footer {
       z-index: 2; }
       .thumb-container .thumb-unit:hover .thumb-overlay {
         opacity: 1; }
+
+.work-container {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: none; }
+  .work-container h4 {
+    color: #c99065;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 20px; }
+  .work-container img {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .work-container .work-return {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: -4px;
+    left: -60px; }
+    .work-container .work-return path {
+      fill: rgba(0, 0, 0, 0.4); }
+    .work-container .work-return:hover {
+      opacity: 1; }
+
+@media (max-width: 740px) {
+  .work-container .work-return {
+    left: 0px; }
+  .work-container h4 {
+    margin-left: 60px; } }

@@ -28,6 +28,10 @@ module.exports = function(grunt) {
       }
     },
     watch: {
+      includes: {
+        files: ['_includes/*.html'],
+        tasks: ['jeky-build']
+      },
       settings: {
         files: ['_data/*.yml'],
         tasks: ['jeky-build']

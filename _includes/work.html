@@ -1,21 +1,33 @@
-<section class="alt-section">
+<section class="alt-section section-work">
 
   <h3 id="work">Work</h3>
 
-  <div class="thumb-container">
+  <div class="work-belt">
 
+    <div class="thumb-wrap">
 
-    {% for project in site.data.settings.projects %}
+      <div class="thumb-container">
+        {% for project in site.data.settings.projects %}
 
-    <div class="thumb-unit">
-      <img class="thumb-image" src="{{ project.fileName | prepend: project.folder | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url }}"/>
-      <div class="thumb-overlay">
-        <strong>{{ project.name }}</strong>
+        <div class="thumb-unit" data-folder="{{ project.folder }}">
+          <img class="thumb-image" src="{{ project.fileName | prepend: project.folder | prepend: site.data.settings.img_default_path | prepend: site.data.settings.absolute_url }}"/>
+          <div class="thumb-overlay">
+            <strong>{{ project.name }}</strong>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+
+    </div>
+
+    <div class="work-wrap">
+      <div class="work-container">
+        <div class="work-return">{% include icons/icon-back.html %}</div>
+        <h4 class="project-title"></h4>
+        <div class="project-load"></div>
       </div>
     </div>
 
-    {% endfor %}
-
   </div>
-
 </section>
