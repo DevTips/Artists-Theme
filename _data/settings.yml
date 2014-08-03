@@ -5,10 +5,7 @@ title: Artists Theme
 description: Thinker // Designer // YouTuber
 email: artist@email
 
-
-logo: 'logo.svg'
-background-image: 'hero-bg.jpg'
-
+# NOTE: The Logo and Background image are defined in the all.sass document.
 
 menu:
 - {name: About Me, url: '#about-me'}
@@ -22,10 +19,15 @@ menu:
 #-------------------------------
 # About Section
 
-avatar: 'travitar.jpg'
 
+# NOTE: The avatar is defined in the all.sass document.
 
-blurb: '<p><strong>Travis specializes in making things</strong> for human people. Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>, but he also puts effort into crafting <a href="http://soundcloud.com/travis-neilson">next-level beats</a> and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> about making codes happen.</p>'
+blurb: >
+  **Travis specializes in making things** for human people.
+  Most of the things he makes are [digital interfaces](http://travisneilson.com), 
+  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson) 
+  and [YouTube videos](http://youtube.com/user/devtipsfordesigners) about making codes happen.
+
 
 
 skills:

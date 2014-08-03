@@ -15,7 +15,7 @@
   
   
   <div class="blurb">
-    {{ site.data.settings.blurb }}
+    {{ site.data.settings.blurb | markdownify }}
   </div>
   
   {% if site.data.settings.skills %}
@@ -27,8 +27,9 @@
       <div class="skill-unit">
         <div class="skill-label">{{ skill.name }}</div>
         <div class="skill-icons skill-{{ skill.value }}">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
+          {% for i in (1..10) %}
+            <span></span>
+          {% endfor %}
         </div>
       </div>    
 
