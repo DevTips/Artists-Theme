@@ -46,8 +46,6 @@ skills:
 #-------------------------------
 # Work Section
 
-animation: "bounceOut"
-
 projects:
 - {name: TYPO International Design Talks, folder: 'proj-1'}
 - {name: City-IN website concept, folder: 'proj-2'}
@@ -59,5 +57,13 @@ projects:
 - {name: Stripes & Co, folder: 'proj-8'}
 
 
+#----------------------------------
+# Fall backs for JS disabled users
+projectNoscript: >
+  **You do not have JavaScript enabled...** Why? Are you living in the past?
+  There is no good reason to **NOT**, but alas, here we are. I hope this illustrates
+  to you that I am concerned with usability. For the "special" people out there who
+  browse without it, I take note!
 
+  <img src="/assets/img/work/proj-2/CityIn-AntonSkvortsov.jpg" />	
 
