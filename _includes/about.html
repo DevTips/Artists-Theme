@@ -15,7 +15,7 @@
   
   
   <div class="blurb">
-    {{ site.data.settings.blurb }}
+    {{ site.data.settings.blurb | markdownify }}
   </div>
   
   {% if site.data.settings.skills %}
