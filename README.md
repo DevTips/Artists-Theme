@@ -2,6 +2,24 @@
 
 This site is being built on YouTube, one week at a time. See all the videos up to date here: [How to build a professional website from start to finish](https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI)
 
+## How to install/use
+
+In order to get this super fantastic [Jekyll](http://jekyllrb.com) powered template for Artists follow this simple step: 
+
+* If you haven't ruby on your computer, install it. 
+* Then run in your terminal `$ gem install jekyll`
+* Move/`cd` to a folder, always in your terminal, in which you want to insert the *Artists-Theme*
+* Run `git clone https://github.com/DevTips/Artists-Theme.git`
+* Then `cd Artists-Theme`
+* `jekyll serve -w` or `jekyll serve`
+* **DONE**
+
+Isn't it fantastic? 
+
+
+
+## Credits
+
 _Code contributions via pull request:_
 - [iiSa3](https://github.com/iiSa3)
 - [Killua13](https://github.com/Killua13)
