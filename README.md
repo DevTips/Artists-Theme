@@ -21,6 +21,10 @@ Isn't it fantastic?
 ## Credits
 
 _Code contributions via pull request:_
+- [cust0dian](https://github.com/cust0dian)
+- [bzerangue](https://github.com/bzerangue)
+- [Brian Guerrero](https://github.com/brian-guerrero)
+- [Vipul Bansal](https://github.com/vipsyvipul)
 - [iiSa3](https://github.com/iiSa3)
 - [Killua13](https://github.com/Killua13)
 - [iMoritz](https://github.com/iMoritz)
