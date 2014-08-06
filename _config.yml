@@ -5,6 +5,8 @@ permalink: pretty
 
 port: 8000
 
+include: ["_includes/work"]
+
 sass:
   sass_dir: assets/css
   style: :nested
