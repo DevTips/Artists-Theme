@@ -56,14 +56,3 @@ projects:
 - {name: Weather Dashboard, folder: 'proj-7', file: 'work/proj-7.html'}
 - {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
 
-
-#----------------------------------
-# Fall backs for JS disabled users
-projectNoscript: >
-  **You do not have JavaScript enabled...** Why? Are you living in the past?
-  There is no good reason to **NOT**, but alas, here we are. I hope this illustrates
-  to you that I am concerned with usability. For the "special" people out there who
-  browse without it, I take note!
-
-  <img src="/assets/img/work/proj-2/CityIn-AntonSkvortsov.jpg" />	
-
