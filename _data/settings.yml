@@ -22,12 +22,12 @@ menu:
 
 # NOTE: The avatar is defined in the all.sass document.
 
-
 blurb: >
   **Travis specializes in making things** for human people.
   Most of the things he makes are [digital interfaces](http://travisneilson.com), 
   but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson) 
   and [YouTube videos](http://youtube.com/user/devtipsfordesigners) about making codes happen.
+
 
 
 skills:
@@ -47,15 +47,12 @@ skills:
 # Work Section
 
 projects:
-- {name: TYPO International Design Talks, folder: 'proj-1'}
-- {name: City-IN website concept, folder: 'proj-2'}
-- {name: Crispy Icons, folder: 'proj-3'}
-- {name: Flat Mobile UI/UX Concept, folder: 'proj-4'}
-- {name: Fresh It Up, folder: 'proj-5'}
-- {name: Timeline Page, folder: 'proj-6'}
-- {name: Weather Dashboard, folder: 'proj-7'}
-- {name: Stripes & Co, folder: 'proj-8'}
-
-
-
+- {name: TYPO International Design Talks, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: City-IN website concept, folder: 'proj-2', file: 'work/proj-2.html'}
+- {name: Crispy Icons, folder: 'proj-3', file: 'work/proj-3.html'}
+- {name: Flat Mobile UI/UX Concept, folder: 'proj-4', file: 'work/proj-4.html'}
+- {name: Fresh It Up, folder: 'proj-5', file: 'work/proj-5.html'}
+- {name: Timeline Page, folder: 'proj-6', file: 'work/proj-6.html'}
+- {name: Weather Dashboard, folder: 'proj-7', file: 'work/proj-7.html'}
+- {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
 
