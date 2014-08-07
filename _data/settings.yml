@@ -13,21 +13,26 @@ menu:
 - {name: Clients, url: '#clients'}
 - {name: Contact, url: '#contact'}
 
+#-------------------------------
+# SEO Section
 
+# NOTE: Providing SEO information will make this website more searchable on the internet.
 
+seo:
+  description: 'Provide a description for your website to make it visible to search engines.'
+  rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+  rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
 
 #-------------------------------
 # About Section
-
 
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
   **Travis specializes in making things** for human people.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com), 
-  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson) 
+  Most of the things he makes are [digital interfaces](http://travisneilson.com),
+  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson)
   and [YouTube videos](http://youtube.com/user/devtipsfordesigners) about making codes happen.
-
 
 
 skills:
@@ -39,9 +44,6 @@ skills:
 - {name: Visual Design, value: '5'}
 - {name: UX Design, value: '8'}
 - {name: Programming, value: '6'}
-
-
-
 
 #-------------------------------
 # Work Section
@@ -55,4 +57,3 @@ projects:
 - {name: Timeline Page, folder: 'proj-6', file: 'work/proj-6.html'}
 - {name: Weather Dashboard, folder: 'proj-7', file: 'work/proj-7.html'}
 - {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
-
