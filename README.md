@@ -14,7 +14,9 @@ In order to get this super fantastic [Jekyll](http://jekyllrb.com) powered templ
 * `jekyll serve -w` or `jekyll serve`
 * **DONE**
 
-Isn't it fantastic? 
+Isn't it fantastic?
+
+Read [this](http://jekyll-windows.juthilo.com/) to learn how to use Jekyll on windows
 
 
 
