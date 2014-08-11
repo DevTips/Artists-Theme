@@ -48,6 +48,11 @@ _A big thank you to these creators for contributing sample projects for the "wor
 
 ![The Design](/assets/img/the_design.jpg)
 
+
+_Artist Thmemes in the wild:_
+- [limestudios](http://limestudios.net/)
+
+
 ---
 
 This is a free Jekyll Theme that is currently being developed in weekly episodes on the [DevTips YouTube channel](http://youtube.com/devtipsfordesigners). 
