@@ -14,13 +14,19 @@ In order to get this super fantastic [Jekyll](http://jekyllrb.com) powered templ
 * `jekyll serve -w` or `jekyll serve`
 * **DONE**
 
-Isn't it fantastic? 
+Isn't it fantastic?
+
+Read [this](http://jekyll-windows.juthilo.com/) to learn how to use Jekyll on windows
 
 
 
 ## Credits
 
 _Code contributions via pull request:_
+- [cust0dian](https://github.com/cust0dian)
+- [bzerangue](https://github.com/bzerangue)
+- [Brian Guerrero](https://github.com/brian-guerrero)
+- [Vipul Bansal](https://github.com/vipsyvipul)
 - [iiSa3](https://github.com/iiSa3)
 - [Killua13](https://github.com/Killua13)
 - [iMoritz](https://github.com/iMoritz)
@@ -43,6 +49,11 @@ _A big thank you to these creators for contributing sample projects for the "wor
 
 
 ![The Design](/assets/img/the_design.jpg)
+
+
+_Artist Thmemes in the wild:_
+- [limestudios](http://limestudios.net/)
+
 
 ---
 
