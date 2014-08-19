@@ -7,8 +7,14 @@
   
   .client-unit
     max-width: 750px
-    margin: 0 auto 50px
-    +display(flex)
+    margin: 0 0 50px -375px
+    +position(absolute, 0px null null 50%)
+    z-index: 1
+    display: none
+
+    &.active-client
+      +display(flex)
+      @extend %#{$animation}
     
     .client-face
       min-width: 300px
@@ -35,11 +41,14 @@
       font-weight: 300
       margin-top: -10px
       position: relative
-      
+
+
+
+// Logos
 .clients-logos
   position: relative
   max-width: 750px
-  margin: 0 auto 100px
+  margin: 350px auto 100px
   +display(flex)
   +align-items(space-around)
   +justify-content(center)
@@ -49,15 +58,14 @@
     height: 80px
     min-width: 200px
     background:
-      image: url(/assets/img/clients/logo1.png)
       size: contain
-      position: center
+      position: center bottom
       repeat: no-repeat
     cursor: pointer
     margin: 0 20px
     
     &.active-client
-      box-shadow: 0px 4px 0px $accent
+      box-shadow: 0px 10px 0px $documentBackgroundColor, 0px 14px 0px $accent
     
 
 .client-quote-mark
@@ -69,6 +77,9 @@
   path
     fill: $accent
 
+
+
+// Controls
 .client-controls
   +position(absolute, 0px 0px 0px 0px) 
   

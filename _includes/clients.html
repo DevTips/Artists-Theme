@@ -2,41 +2,45 @@
 
   <h3 id="clients">Clients</h3>
 
+  
+  
+  
+  <div class="clients-belt">
+    
+    
+    {% for client in site.data.settings.clients %}
+    <div class="client-unit">
+      
+      <div class="client-face">
+        <img src="assets/img/clients/{{ client.avatar }}" alt="client-face">
+        <strong class="client-name">{{ client.name }}</strong>
+        <em class="client-title">{{ client.title }}</em>
+      </div>
+      
+      <div class="client-content">
+        <div class="client-quote-mark">{% include icons/icon-quote-mark.html %}</div>
+        {{ client.quote }}
+      </div>
+      
+    </div>
+    {% endfor %}
+    
+  </div>
+  
   <div class="client-controls">
     <div class="client-control-next">{% include icons/icon-next.html %}</div>
     <div class="client-control-prev">{% include icons/icon-prev.html %}</div>
   </div>
   
-  <div class="clients-belt">
-    
-    <div class="client-unit">
-      
-      <div class="client-face">
-        <img src="assets/img/clients/face-aaroni.jpg" alt="client-face">
-        <strong class="client-name">Scott Summers</strong>
-        <em class="client-title">Director of Design, Quebec Int.</em>
-      </div>
-      
-      <div class="client-content">
-        <div class="client-quote-mark">{% include icons/icon-quote-mark.html %}</div>
-        <p><strong>In pellentesque faucibus vestibulum.</strong> Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo</p>
-      </div>
-      
-    </div>
-    
-  </div>
+  
   
   <div class="clients-logos">
-  
-    <div class="client-logo active-client"></div>
-    
-    <div class="client-logo"></div>
-    
-    <div class="client-logo"></div>
-    
-    <div class="client-logo"></div>
-  
+    {% for client in site.data.settings.clients %}
+    <div class="client-logo" style="background-image: url(/assets/img/clients/{{ client.logo }});"></div>
+    {% endfor %}
   </div>
+  
+  
   
 
 </section>
