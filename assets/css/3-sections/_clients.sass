@@ -1,0 +1,160 @@
+.section-clients
+  position: relative
+
+.clients-belt
+  width: 100%
+  position: relative
+  
+  .client-unit
+    max-width: 750px
+    margin: 50px auto
+    position: relative
+    z-index: 1
+    display: none
+
+    &.active-client
+      +display(flex)
+      @extend %#{$animation}
+    
+    .client-face
+      min-width: 300px
+      text-align: center
+      
+      img
+        max-width: 100px
+        border-radius: 50%  
+        
+        
+      .client-name
+        display: block
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 1px
+      
+      .client-title
+        font-style: normal
+        font-size: 12px
+        color: #999
+      
+    .client-content
+      font-size: 18px
+      line-height: 36px
+      font-weight: 300
+      margin-top: -10px
+      position: relative
+      
+
+
+
+// Logos
+.clients-logos
+  position: relative
+  max-width: 750px
+  margin: 0px auto 100px
+  +display(flex)
+  +align-items(flex-end)
+  +justify-content(space-around)
+  
+  
+  .client-logo
+    cursor: pointer
+    margin: 0 20px 20px
+    padding-bottom: 20px
+    border-bottom: 4px solid transparent
+    opacity: 0.5
+    
+    &.active-client
+      opacity: 1
+      border-bottom: 4px solid $accent
+    
+
+.client-quote-mark
+  +position(absolute, -18px null null -15px)
+  +size(60px)
+  z-index: -1
+  opacity: 0.3
+  
+  path
+    fill: $accent
+
+
+
+// Controls
+.client-controls
+  +position(absolute, 0px 0px 0px 0px) 
+  
+  > div
+    +size(40px)
+    margin-top: -20px
+    cursor: pointer
+    
+    path
+      fill: $accent
+    
+  .client-control-next
+    +position(absolute, 50% 10px null null)
+  
+  .client-control-prev
+    +position(absolute, 50% null null 10px)
+
+// clients-mobile-nav
+.clients-mobile-nav
+  text-align: center
+  position: relative
+  z-index: 2
+  display: none
+  
+  span
+    display: inline-block
+    +size(16px)
+    border-radius: 50%
+    border: solid 2px $bgcolor
+    margin: 0px 10px
+    cursor: pointer
+    
+    &.active-client
+      border-color: $accent
+    
+    
+    
+
+@media (max-width: 750px)
+  .clients-logos
+    +flex-wrap(wrap)
+  
+  .clients-belt 
+    overflow-x: hidden
+    
+    .client-unit.active-client
+      display: block
+      position: relative
+      margin-left: 0px
+      left: auto
+    
+      .client-face
+        margin-bottom: 30px
+      
+      .client-content
+        padding: 0px 30px
+        max-width: 400px
+        margin: 0px auto
+      
+      .client-quote-mark
+        left: 6px
+
+  .client-controls
+    display: none
+  
+  .clients-logos
+    display: none
+
+  .clients-mobile-nav
+    display: block
+    
+    
+    
+    
+    
+    
+    
+    
