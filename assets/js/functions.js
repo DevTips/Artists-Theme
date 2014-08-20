@@ -64,8 +64,10 @@ function clientStuff() {
   
   $('.client-unit').first().addClass('active-client');
   $('.client-logo').first().addClass('active-client');
+  $('.clients-mobile-nav span').first().addClass('active-client');
   
-  $('.client-logo').click(function() {
+  
+  $('.client-logo, .clients-mobile-nav span').click(function() {
     var $this = $(this),
         $siblings = $this.parent().children(),
         position = $siblings.index($this);

@@ -11,7 +11,7 @@ In order to get this super fantastic [Jekyll](http://jekyllrb.com) powered templ
 * Move/`cd` to a folder, always in your terminal, in which you want to insert the *Artists-Theme*
 * Run `git clone https://github.com/DevTips/Artists-Theme.git`
 * Then `cd Artists-Theme`
-* `jekyll serve -w` or `jekyll serve`
+* `jekyll serve --watch`
 * **DONE**
 
 Isn't it fantastic?
@@ -51,7 +51,7 @@ _A big thank you to these creators for contributing sample projects for the "wor
 ![The Design](/assets/img/the_design.jpg)
 
 
-_Artist Thmemes in the wild:_
+_Artist Themes in the wild:_
 - [limestudios](http://limestudios.net/)
 
 
