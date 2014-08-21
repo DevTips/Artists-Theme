@@ -2,16 +2,13 @@
   
   <h3 id="contact">Contact</h3>
   
+  
   <div class="social-links">
-    <a href="" class="icon-twitter"></a>
-    <a href="" class="icon-dribbble"></a>
-    <a href="" class="icon-behance"></a>
-    <a href="" class="icon-youtube"></a>
-    <a href="" class="icon-linkedin"></a>
+    {% for link in site.data.settings.social %}
+    <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+    {% endfor %}
   </div>
   
   <hr class="bar">
   
-  <a class="biglink" href="mailto:artist@gmail.com">artist@gmail.com</a>
-  
-</section>
+  <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</section>

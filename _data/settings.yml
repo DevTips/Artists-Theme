@@ -85,3 +85,23 @@ clients:
   title: 'VP of Helmut, Lorem Sorem LLC.',
   quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
   logo: 'logo4.png'}
+  
+  
+#-------------------------------
+# Contact Section
+  
+social:
+- {icon: 'twitter', link: 'http:twitter.com/devtipsshow'}
+- {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
+- {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
+- {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
+- {icon: 'linkedin', link: 'www.linkedin.com/in/travisneilson/'}
+
+  
+# can be: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+  
+  
+  
+  
+  
+  
