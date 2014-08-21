@@ -66,7 +66,7 @@ function clientStuff() {
   // Set first client as active.
   setActiveClient(clients.first().index());
 
-  $('.client-logo').click(function() {
+  $('.client-logo, .clients-mobile-nav span').click(function() {
     var clickedClient = $(this).index();
     setActiveClient(clickedClient);
   });
@@ -93,6 +93,7 @@ function clientStuff() {
 
     $('.client-logo').removeClass('active-client').eq(index).addClass('active-client');
     $('.client-unit').removeClass('active-client').eq(index).addClass('active-client');
+    $('.clients-mobile-nav span').removeClass('active-client').eq(index).addClass('active-client');
   }
 }
 
