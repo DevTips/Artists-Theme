@@ -3,7 +3,7 @@
 
 title: Artists Theme
 description: Thinker // Designer // YouTuber
-email: artist@email
+email: devtipsfordesigners@gmail.com
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
@@ -91,14 +91,14 @@ clients:
 # Contact Section
   
 social:
-- {icon: 'twitter', link: 'http:twitter.com/devtipsshow'}
+- {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
 - {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
 - {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
 - {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'www.linkedin.com/in/travisneilson/'}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/travisneilson/'}
 
   
-# can be: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
   
   
   
