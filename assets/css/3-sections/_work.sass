@@ -36,20 +36,20 @@
   float: left
   
 .thumb-container
-  display: table
+  display: block
   max-width: 960px
   margin: 0px auto
   +clearfix
   
   label
     position: relative
-    display: table-cell
+    display: block
     float: left
     width: 25%
     cursor: pointer
     
     .thumb-unit
-      width: 100%
+      display: block
       overflow: hidden
       
       img
@@ -65,18 +65,17 @@
       +justify-content(space-around)
       +display(flex)
       background: fade-out($accent, 0.1)
-      text-align: center
       @extend %animationstart_#{$animation}
 
       strong
         display: block
-        padding: 0px 20px
         color: white
         font:
           weight: 300
           size: 24px
         text-transform: uppercase
         line-height: 1.2
+        vertical-align: middle
       
     &:hover
       z-index: 2
