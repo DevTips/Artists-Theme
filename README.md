@@ -2,6 +2,8 @@
 
 This site is being built on YouTube, one week at a time. See all the videos up to date here: [How to build a professional website from start to finish](https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI)
 
+Subscribe to [the channel](https://www.youtube.com/user/DevTipsForDesigners) to follow along as we develop this project step by step from the beginning.
+
 ## How to install/use
 
 In order to get this super fantastic [Jekyll](http://jekyllrb.com) powered template for Artists follow this simple step: 
@@ -16,14 +18,17 @@ In order to get this super fantastic [Jekyll](http://jekyllrb.com) powered templ
 
 Isn't it fantastic?
 
-Read [this](http://jekyll-windows.juthilo.com/) to learn how to use Jekyll on windows
+Learn how to [use Jekyll on windows](http://jekyll-windows.juthilo.com/) (if that's your thing :)
 
 
 
 ## Credits
 
 _Code contributions via pull request:_
+- [Riccardo Pasianotto](http://rkpasia.github.io)
 - [cust0dian](https://github.com/cust0dian)
+- [Dylan Spicker](https://github.com/ZDesign)
+- [arielsafari](https://github.com/arielsafari)
 - [bzerangue](https://github.com/bzerangue)
 - [Brian Guerrero](https://github.com/brian-guerrero)
 - [Vipul Bansal](https://github.com/vipsyvipul)
@@ -32,10 +37,14 @@ _Code contributions via pull request:_
 - [iMoritz](https://github.com/iMoritz)
 - [jgrimshaw](https://github.com/jgrimshaw)
 - [boodaah](https://github.com/boodaah)
-- [meecrobe](https://github.com/meecrobe)
-- [rkpasia](http://rkpasia.github.io)
-- [arielsafari](https://github.com/arielsafari)
-
+- [Vadzim](https://github.com/meecrobe)
+- [Eric Ellenbrook](https://github.com/ellenbrook)
+- [rodrigofuentes](https://github.com/rodrigofuentes)
+- [Jonathan](https://github.com/foohyfooh)
+- [George](https://github.com/g3org3)
+- [Anders Thuesen](https://github.com/ande765a)
+- [beRoberto](https://github.com/beRoberto)
+- [Sven Kube](https://github.com/SvenKube)
 
 _A big thank you to these creators for contributing sample projects for the "work" section:_
 - [Micael Butial](https://www.behance.net/gallery/14751131/-TYPO-International-Design-Talks)
@@ -57,6 +66,7 @@ _Artist Themes in the wild:_
 
 ---
 
+
 This is a free Jekyll Theme that is currently being developed in weekly episodes on the [DevTips YouTube channel](http://youtube.com/devtipsfordesigners). 
 
-Subscribe to the channel to follow along as we develop this project step by step from the begining.
+
