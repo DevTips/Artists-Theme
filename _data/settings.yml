@@ -24,6 +24,13 @@ seo:
   rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
 
 #-------------------------------
+# Google Analytics Section
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
+
+#-------------------------------
 # About Section
 
 # NOTE: The avatar is defined in the all.sass document.
