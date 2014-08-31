@@ -4,7 +4,7 @@
   
   <div class="face-lockup">
     
-    <div class="face-img"></div>
+    <div class="face-img"><p>{{ site.data.settings.name }}</p></div>
     
     <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
     <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
@@ -27,6 +27,7 @@
       <div class="skill-unit">
         <div class="skill-label">{{ skill.name }}</div>
         <div class="skill-icons skill-{{ skill.value }}">
+          <p>{{ skill.value }} out of 10</p>
           {% for i in (1..10) %}
             <span></span>
           {% endfor %}

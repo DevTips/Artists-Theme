@@ -5,12 +5,12 @@
   
   <div class="social-links">
     {% for link in site.data.settings.social %}
-    <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+    <a href="{{ link.link }}" class="icon-{{ link.icon }}" title="Contact {{ site.data.settings.name }} via {{ link.icon | capitalize }}"></a>
     {% endfor %}
   </div>
   
   <hr class="bar">
   
-  <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
+  <a class="biglink" href="mailto:{{ site.data.settings.email }}" name="E-mail {{ site.data.settings.name }}">{{ site.data.settings.email }}</a>
   
 </section>

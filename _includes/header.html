@@ -2,7 +2,7 @@
     
   <nav>
     {% for item in site.data.settings.menu %}
-      <a href="{{ item.url }}">{{ item.name }}</a>
+      <a href="{{ item.url }}" title="{{ item.name }} ">{{ item.name }}</a>
     {% endfor %}
   </nav>
   
