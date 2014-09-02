@@ -1,0 +1,116 @@
+/*	Typography presets
+  ------------------------------------	*/
+
+.gigantic, .huge, .large, .bigger, .big, 
+h1, h2, h3, h4, h5, h6
+  color: $headlineColor
+  font-weight: bold
+
+.gigantic
+  font-size: 110px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.huge, h1
+  font-size: 68px
+  line-height: 1.05
+  letter-spacing: -1px
+
+.large, h2
+  font-size: 42px
+  line-height: 1.14
+
+.bigger, h3 
+  font-size: 26px
+  line-height: 1.38
+
+.big, h4
+  font-size: 22px
+  line-height: 1.38
+
+.small, small 
+  font-size: 10px
+  line-height: 1.2
+
+
+
+p
+  margin: 0 0 20px 0
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+
+
+/* Links
+  ------------------------------------	*/
+a
+  color: $linkColor
+  text-decoration: none
+  outline: 0
+  
+a:hover, a:focus
+  color: lighten($linkColor, 20%)
+
+
+
+/* Selection colors (easy to forget)
+  ------------------------------------	*/
+
+::selection
+  background: $selectionColor
+  
+::-moz-selection
+  background: $selectionColor
+  
+img::selection
+  background: transparent
+  
+img::-moz-selection
+  background: transparent
+  
+body
+  -webkit-tap-highlight-color: $selectionColor
+
+
+
+/* Basic Styles
+  ------------------------------------	*/
+body
+  background: $documentBackgroundColor
+  font-size: 14px
+  line-height: 1.6
+  font-family: 'Open Sans' sans-serif
+  color: $textColor
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+svg
+  +size(100%)
+
+h3
+  @extend %small-bold
+  color: $accent-light
+  text-align: center
+  padding: 100px 0 30px
+
+@media screen and (max-width: 480px)
+  h3
+    padding: 50px 0 50px
+
+.alt-section
+  background: $bgcolor
+  padding-bottom: 100px
+  
+  h3
+    color: darken($accent-light, 10%)

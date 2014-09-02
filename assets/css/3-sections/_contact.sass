@@ -1,0 +1,58 @@
+.section-contact
+  text-align: center
+
+.social-links
+  max-width: 700px
+  margin: 0px auto 50px
+  +display(flex)
+  +justify-content(space-around)
+  +flex-wrap(wrap)
+  
+  a
+    display: block
+    //background: $accent
+    border: 2px solid $accent
+    +size(50px)
+    line-height: 50px
+    color: $accent
+    border-radius: 50%
+    font-size: 28px
+    margin: 20px
+    position: relative
+    
+    
+    &:after
+      content: ''
+      display: block
+      +position(absolute, 0px 0px 0px 0px)
+      border: 2px solid $accent
+      border-radius: 50%
+      margin: -2px
+      opacity: 1
+      +transition()
+      
+    &:hover:after
+      +transform(scale(1.5))
+      opacity: 0
+
+.bar
+  width: 250px
+  height: 0px
+  border-top: 4px solid $accent
+  margin: 0px auto 50px
+
+.biglink
+  display: inline-block
+  font:
+    size: 72px
+    weight: 300
+  line-height: 1
+  
+  @media (max-width: 800px)
+    font-size: 38px
+  
+  @media (max-width: 600px)
+    font-size: 24px
+    
+  @media (max-width: 480px)
+    font-size: 18px
