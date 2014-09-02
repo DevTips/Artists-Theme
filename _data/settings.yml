@@ -24,6 +24,16 @@ seo:
   rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
 
 #-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
+
+#-------------------------------
 # About Section
 
 # NOTE: The avatar is defined in the all.sass document.
