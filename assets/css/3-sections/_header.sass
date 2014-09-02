@@ -1,9 +1,9 @@
 header
   @extend %background-image
-  height: 450px
   background:
     position: 30px 20px, 50% 50%
     image: url(../img/#{$logo-path}), url(../img/#{$hero-path}) 
+  padding-bottom: 50px
   
   
   .logo
@@ -16,7 +16,7 @@ header
     
   nav
     float: right
-    margin: 30px 30px 0 0
+    padding: 30px 30px 0 0
     
     a
       display: inline-block
@@ -52,3 +52,17 @@ header
     letter-spacing: 0.05em
     color: white
     line-height: 1
+
+@media (max-width: 640px)
+  header
+    background:
+      position: 50% 20px, 50% 50%
+  
+    nav
+      float: none
+      text-align: center
+      padding-top: 90px
+    
+    h1
+      padding-top: 0px
+    
