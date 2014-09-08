@@ -9,13 +9,13 @@
     {% endfor %}
   </div>
   
-  <div class="clients-belt">
+  <div class="clients-belt" ng-controller='clientCtrl'>
     
   
     
     
     {% for client in site.data.settings.clients %}
-    <div class="client-unit">
+    <div class="client-unit" ng-swipe-left="prev();" ng-swipe-right="next();">
       
       <figure class="client-face">
         <img src="assets/img/clients/{{ client.avatar }}" alt="client-face">
