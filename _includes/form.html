@@ -25,38 +25,9 @@
   
 </section>
 
-<section>
-
-  <h3>Let's work together</h3>
-  
-<form method="POST" action="//forms.brace.io/{{ site.data.settings.email }}">
-  
-  <div class="contact-info-group">
-
-    <label><span>Your Name</span>
-    <input type="text" name="name"></label>
-    
-    <label><span>Your Email</span>
-    <input type="email" name="_replyto"></label>
-
-  </div>
-
-  <label><span>Tell me about your project</span>
-  <textarea name="message"></textarea></label>
-
-  <div class="submit-wrap">
-    <input type="submit" value="Send">
-  </div>
-
-</form>
-  
-</section>
-
-
 <!-- 
-I dont have jekyll and I have allot of homework so I don't have time to set it up but this code should work pretty well. 
-It probably* needs prettyfication, so I leave it up to you to do that! I just saw your latest vid and knew that I HAD to do this.
-*deffinately
+I have no idea what this looks like. I am in the blind. I am going to work throught the series using Codekit or 
+Jade or Slim soon, not sure which, but till then jekyll isn't working so I don't know how this looks.
 
 It gives the responses to a google form, which is in my account but there is a link below to see responses. From tehre you can just 
 cop and paste all the users. I would recomend userss of this actually doing it themselves, though, it's not that hard.
@@ -72,18 +43,10 @@ How To Do:
 
 
 ~Albatross Games, AKA The Miner, AKA Russ
--->
-<!-- See responses: https://docs.google.com/spreadsheets/d/1PKD_eA15NRi_29M-tm-vpfL3mxIsc030O5JLPTLBNpQ/edit?usp=sharing  -->
-<h1>Join Email List</h1>
-form action="https://docs.google.com/forms/d/1cxcmmBqeOd5iDakauSrMpBzFxrg7Xmw9suSRxP6lOJs/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
-<label class="ss-q-item-label" for="entry_705219125">Email Address</label>
-<input type="text" name="entry.705219125" value="" class="ss-q-short" id="entry_705219125" dir="auto" aria-label="Email Address  " title="">
-<input type="hidden" name="draftResponse" value="[,,&quot;-1971349742568512836&quot;]
-">
-<input type="hidden" name="pageHistory" value="0">
-
-
-<input type="hidden" name="fbzx" value="-1971349742568512836">
-
-<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+See responses: https://docs.google.com/spreadsheets/d/1PKD_eA15NRi_29M-tm-vpfL3mxIsc030O5JLPTLBNpQ/edit?usp=sharing  -->
+<h3>Join Email List</h1>
+<form id="google-form" action="https://docs.google.com/forms/d/1cxcmmBqeOd5iDakauSrMpBzFxrg7Xmw9suSRxP6lOJs/formResponse" method="POST" target="_self" onsubmit="function(e) {e.preventDefault();}">
+	<label class="ss-q-item-label" for="entry_705219125">Email Address</label>
+	<input type="text" name="entry.705219125" value="" class="ss-q-short" id="entry_705219125" dir="auto" aria-label="Email Address  " title="">
+	<input type="submit" value="Send" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
 </form>
