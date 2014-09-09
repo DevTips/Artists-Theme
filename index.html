@@ -1,41 +1,250 @@
----
----
 
-<!DOCTYPE html>
-<html class="">
-<head>
-  <meta charset="UTF-8">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.data.settings.seo.description }}">
-  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
-  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="{{ site.data.settings.seo.description }}"/>
+    <meta rel="author" href="{{ site.data.settings.seo.rel-author }}"/>
+    <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}"/>
+    <title>title</title>
+    <link rel="stylesheet" href="assets/css/all.css"/>
+  </head>
+  <body><header id="header">
+    
+  <nav>
+    {% for item in site.data.settings.menu %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+  
+  <h1><span>{{ site.data.settings.title }}</span></h1>
+  <p class="kicker">{{ site.data.settings.description }}</p>
+  
+</header>
+<section>
 
-  <title>{{ site.data.settings.title }}</title>
+  <h3 id="about-me">About Myself</h3>
+  
+  <div class="face-lockup">
+    
+    <div class="face-img"></div>
+    
+    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
+    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
+    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
+    <div class="icon-video">{% include icons/icon-video.html %}</div>
+    
+  </div>
+  
+  
+  <div class="blurb">
+    {{ site.data.settings.blurb | markdownify }}
+  </div>
+  
+  {% if site.data.settings.skills %}
+  
+  <div class="skill-lockup">
 
-  <link rel="stylesheet" href="assets/css/all.css">
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    {% for skill in site.data.settings.skills %}
 
-</head>
-<body>
+      <div class="skill-unit">
+        <div class="skill-label">{{ skill.name }}</div>
+        <div class="skill-icons skill-{{ skill.value }}">
+          {% for i in (1..10) %}
+            <span></span>
+          {% endfor %}
+        </div>
+      </div>    
 
-{% include header.html %}
+    {% endfor %}
+    
+  </div>
+  
+  {% endif %}
 
-{% include about.html %}
+</section>
+<section class="alt-section section-work">
+  
+  <h3 id="work">Work</h3>
+  {% for project in site.data.settings.projects %}
+    <input type="radio" name="trigger" class="trigger" id="{{ project.folder }}" />
+  {% endfor %}
 
-{% include work.html %}
+  <input type="radio" name="trigger" id="return" class="return" />
 
-{% include clients.html %}
+  <div class="work-belt">
+    
+    <div class="thumb-wrap">
+      <div class="thumb-container">
+      {% for project in site.data.settings.projects %}
+      <label for="{{ project.folder }}">  
+        <div class="thumb-unit" data-folder="{{ project.folder }}" style="background-image: url(assets/img/work/{{project.folder}}/thumb.jpg);"> 
+          <div class="thumb-overlay">
+            <strong>{{ project.name }}</strong>
+          </div>
+        </div>
+      </label>
+      {% endfor %}
+    </div>
+    </div>
+    
+    <div class="work-wrap">
+      <div class="work-container">
+      <label for="return">
+        <div class="work-return">{% include icons/icon-back.html %}</div>
+      </label>
+      <h4 class="project-title"></h4>
+      <div class="project-load"></div>
 
-{% include contact.html %}
+      <noscript>
+        {% for project in site.data.settings.projects %}
+          <div class="noscript" id="content-{{ project.folder }}">
+            <h4 class="project-title">{{ project.name }}</h4>
+            <div class="noscript-load">
+              {% include {{project.file}} %}
+            </div>
+          </div>
+        {% endfor %}
+      </noscript>
 
-{% include form.html %}
+    </div>
+    </div>
+    
+  </div>
+</section><section class="section-clients">
 
+  <h3 id="clients">Clients</h3>
 
-{% include footer.html %}
+  
+  <div class="clients-mobile-nav">
+    {% for client in site.data.settings.clients %}
+    <span></span>
+    {% endfor %}
+  </div>
+  
+  <div class="clients-belt">
+    
+  
+    
+    
+    {% for client in site.data.settings.clients %}
+    <div class="client-unit">
+      
+      <figure class="client-face">
+        <img src="assets/img/clients/{{ client.avatar }}" alt="client-face">
+        <figcaption>
+          <strong class="client-name">{{ client.name }}</strong>
+          <em class="client-title">{{ client.title }}</em>
+        </figcaption>
+      </figure>
+      
+      <div class="client-content">
+        <div class="client-quote-mark">{% include icons/icon-quote-mark.html %}</div>
+        {{ client.quote }}
+      </div>
+      
+    </div>
+    {% endfor %}
+    
+  </div>
+  
+  <div class="client-controls">
+    <div class="client-control-next">{% include icons/icon-next.html %}</div>
+    <div class="client-control-prev">{% include icons/icon-prev.html %}</div>
+  </div>
+  
+  
+  
+  <div class="clients-logos">
+    {% for client in site.data.settings.clients %}
+    <img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+    {% endfor %}
+  </div>
+  
+  
+  
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="assets/js/functions.js"></script>
-<!-- REMEMBER TO ADD ANALYTICS! -->
-</body>
+</section><section class="alt-section section-contact">
+  
+  <h3 id="contact">Contact</h3>
+  
+  
+  <div class="social-links">
+    {% for link in site.data.settings.social %}
+    <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+    {% endfor %}
+  </div>
+  
+  <hr class="bar">
+  
+  <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
+  
+</section><section>
+
+  <h3>Let's work together</h3>
+  
+<form method="POST" action="//forms.brace.io/{{ site.data.settings.email }}">
+  
+  <div class="contact-info-group">
+
+    <label><span>Your Name</span>
+    <input type="text" name="name"></label>
+    
+    <label><span>Your Email</span>
+    <input type="email" name="_replyto"></label>
+
+  </div>
+
+  <label><span>Tell me about your project</span>
+  <textarea name="message"></textarea></label>
+
+  <div class="submit-wrap">
+    <input type="submit" value="Send">
+  </div>
+
+</form>
+  
+</section>
+
+<!-- 
+It gives the responses to a google form, which is in my account but there is a link below to see responses. From tehre you can just 
+cop and paste all the users. I would recomend userss of this actually doing it themselves, though, it's not that hard.
+
+How To Do:
+1) create google form
+2) click view live form
+3) view source codes
+4) copy everything inside the form tag and paste it below
+5) cut out all the crap
+6) make it pretty
+7) enjoy!
+
+See responses: https://docs.google.com/spreadsheets/d/1PKD_eA15NRi_29M-tm-vpfL3mxIsc030O5JLPTLBNpQ/edit?usp=sharing  -->
+<h3>Get my Newsletter</h1>
+<form id="google-form" action="https://docs.google.com/forms/d/1cxcmmBqeOd5iDakauSrMpBzFxrg7Xmw9suSRxP6lOJs/formResponse" method="POST" target="_self" onsubmit="function(e) {e.preventDefault();}">
+	<label for="entry_705219125">Email Address</label>
+	<input type="text" name="entry.705219125">
+	<input type="submit" value="Sign Me Up!" name="submit">
+</form><footer id="footer">
+
+  <div class="lockup">
+    
+    <div class="content-wrap">
+      <nav>
+        {% for item in site.data.settings.menu %}
+          <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+      
+      <p class="copyright">All content copyright 2014</p>
+    </div>
+    
+  </div>
+
+</footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
 </html>
