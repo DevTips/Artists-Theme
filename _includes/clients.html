@@ -2,14 +2,14 @@
 
   <h3 id="clients">Clients</h3>
 
-  {% if forloop.first %}
-  	<div class="clients-mobile-nav active-client">
-  {% else %}
-  	<div class="clients-mobile-nav">
-  {% endif %}
   
+  <div class="clients-mobile-nav">
     {% for client in site.data.settings.clients %}
-    <span></span>
+    	{% if forloop.first %}
+    		<span class="active-client"></span>
+    	{% else %}
+    		<span></span>
+    	{% endif %}
     {% endfor %}
   </div>
   
