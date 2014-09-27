@@ -1,5 +1,6 @@
 
 <!--NOTE: The Logo and Background image are defined in the all.sass document.-->
+<!--skills:-->
 <html>
   <head>
     <meta charset="UTF-8"/>
@@ -20,8 +21,8 @@
     </header>
     <section>
       <h3 id="about-me">About Myself</h3>
-      <div class="face-lockup"></div>
-      <div class="face-img">
+      <div class="face-lockup">
+        <div class="face-img"></div>
         <div class="icon-pencil"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100"><path d="M68.495 32.622c.332-1.051-.787-2.17-1.838-1.838l-12.123 3.823-.009.003-.02.006-.04.018-.213.087-.046.031-.085.056-.189.148-.042.033-18.97 18.97-.001.001-.001.001-4.742 4.742c-.584.584-.592 1.522-.017 2.097l8.32 8.32c.575.575 1.513.567 2.097-.017l4.742-4.742 18.971-18.971.033-.042.148-.188.057-.085.03-.046.086-.212.019-.042.007-.021.003-.008 3.823-12.124zm-6.119 9.592l-3.496-1.815-1.815-3.496 7.756-2.446-2.445 7.757zm-18.081 19.01l-6.24-6.24 16.477-16.477 1.921 3.7c.07.134.158.253.262.357.105.105.224.193.357.262l3.7 1.921-16.477 16.477zm-4.742 4.742l-6.24-6.24 2.629-2.629 6.24 6.24-2.629 2.629z"/></svg>
         </div>
         <div class="icon-mouse"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100"><path d="M49.5 74c-8.27 0-15-6.73-15-15v-18c0-8.271 6.729-15 15-15s15 6.73 15 15v18c0 8.271-6.73 15-15 15zm0-45c-6.617 0-12 5.383-12 12v18c0 6.617 5.383 12 12 12s12-5.383 12-12v-18c0-6.617-5.383-12-12-12zm.183 17.53c-2.068 0-3.75-1.681-3.75-3.75v-4.5c0-2.068 1.682-3.75 3.75-3.75s3.75 1.682 3.75 3.75v4.5c0 2.068-1.682 3.75-3.75 3.75zm0-9c-.413 0-.75.337-.75.75v4.5c0 .413.337.75.75.75s.75-.337.75-.75v-4.5c0-.413-.337-.75-.75-.75z"/></svg>
@@ -37,63 +38,88 @@ Most of the things he makes are <a href="http://travisneilson.com">digital inter
  <a href="http://soundcloud.com/travis-neilson">next-level beats</a> 
  and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> 
  about making codes happen.</p>
-{% if site.data.settings.skills %}
+
       </div>
-      <div class="skill-lockup">{% for skill in site.data.settings.skills %}
-        <div class="skill-unit"></div>
-        <div class="skill-label">{{ skill.name }}</div>
-        <div class="skill-icons">skill-{{ skill.value }}</div>{% for i in (1..10) %}
-        <span></span>
-      </div>
-    </section><section class="alt-section section-work">
-  
-  <h3 id="work">Work</h3>
-  {% for project in site.data.settings.projects %}
-    <input type="radio" name="trigger" class="trigger" id="{{ project.folder }}" />
-  {% endfor %}
-
-  <input type="radio" name="trigger" id="return" class="return" />
-
-  <div class="work-belt">
-    
-    <div class="thumb-wrap">
-      <div class="thumb-container">
-      {% for project in site.data.settings.projects %}
-      <label for="{{ project.folder }}">  
-        <div class="thumb-unit" data-folder="{{ project.folder }}" style="background-image: url(assets/img/work/{{project.folder}}/thumb.jpg);"> 
-          <div class="thumb-overlay">
-            <strong>{{ project.name }}</strong>
-          </div>
-        </div>
-      </label>
-      {% endfor %}
-    </div>
-    </div>
-    
-    <div class="work-wrap">
-      <div class="work-container">
-      <label for="return">
-        <div class="work-return">{% include icons/icon-back.html %}</div>
-      </label>
-      <h4 class="project-title"></h4>
-      <div class="project-load"></div>
-
-      <noscript>
-        {% for project in site.data.settings.projects %}
-          <div class="noscript" id="content-{{ project.folder }}">
-            <h4 class="project-title">{{ project.name }}</h4>
-            <div class="noscript-load">
-              {% include {{project.file}} %}
+      <div class="skill-lockup">
+        <div class="skill-unit">
+          <div class="skill-label">Communication
+            <div class="skill-icons">.skill-9<span></span>
             </div>
           </div>
-        {% endfor %}
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Organization
+            <div class="skill-icons">.skill-7<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Learning
+            <div class="skill-icons">.skill-10<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Teaching
+            <div class="skill-icons">.skill-6<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Planning
+            <div class="skill-icons">.skill-7<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Visual Design
+            <div class="skill-icons">.skill-5<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">UX Design
+            <div class="skill-icons">.skill-8<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Programming
+            <div class="skill-icons">.skill-6<span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="alt-section">section-work</section>
+    <h3 id="work">Work</h3>
+    <input type="radio" name="trigger" id="undefined" class="trigger"/>
+    <input type="radio" name="trigger" id="return" class="return"/>
+    <div class="work-belt">
+      <div class="thumb-wrap">
+        <div class="thumb-container"></div>
+        <label for="undefined">
+          <div data-folder="undefined" style="background-image: url(assets/img/work/undefined/thumb.jpg);" class="thumb-unit">
+            <div class="thumb-overlay"><strong>bob</strong></div>
+          </div>
+        </label>
+      </div>
+      <div class="work-wrap">
+        <div class="work-container"></div>
+        <label for="return">
+          <div class="work-return"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 40 40"><path d="M22.896 29.125c-.256 0-.512-.098-.707-.293l-8.125-8.125c-.391-.391-.391-1.023 0-1.414l8.125-8.125c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-7.418 7.418 7.417 7.418c.391.391.391 1.023 0 1.414-.195.195-.451.293-.706.293zM20 6c7.72 0 14 6.28 14 14s-6.28 14-14 14-14-6.28-14-14 6.28-14 14-14m0-2c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16z"/></svg>
+          </div>
+        </label>
+        <h4 class="project-title"></h4>
+        <div class="project-load"></div>
+      </div>
+      <noscript>
+        <div id="content-undefined" class="noscript"></div>
+        <h4 class="project-title">bob</h4>
+        <div class="noscript-load"></div>
+        <!--include project.file-->
       </noscript>
-
-    </div>
-    </div>
-    
-  </div>
-</section><section class="section-clients">
+    </div><section class="section-clients">
 
   <h3 id="clients">Clients</h3>
 

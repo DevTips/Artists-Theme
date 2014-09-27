@@ -1,0 +1,32 @@
+section.alt-section section-work
+-projects = [{name: 'bob', file: '_blurb.md'}]
+  
+  h3#work Work
+  each project in projects
+      input(type="radio" name="trigger" class="trigger" id="#{ project.folder }")
+
+  input(type="radio" name="trigger" id="return" class="return")
+
+  .work-belt
+    
+    .thumb-wrap
+      .thumb-container
+      each project in projects
+          label(for="#{ project.folder }")
+            .thumb-unit(data-folder="#{project.folder}" style="background-image: url(assets/img/work/#{project.folder}/thumb.jpg);") 
+              .thumb-overlay
+                strong #{project.name}
+    
+    .work-wrap
+      .work-container
+      label(for="return")
+        .work-return: include icons/icon-back.html
+      h4.project-title
+      .project-load
+    noscript
+        each project in projects
+            .noscript(id='content-#{project.folder}')
+            h4.project-title #{ project.name }
+            .noscript-load
+            //include project.file
+      

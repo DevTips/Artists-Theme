@@ -7,26 +7,26 @@ html
         meta(name="description" content="{{ site.data.settings.seo.description }}")
         meta(rel="author" href="{{ site.data.settings.seo.rel-author }}")
         meta(rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}")
-        
+
         title= title
-        
+
         link(rel="stylesheet" href="assets/css/all.css")
-    
+
     body
         include _includes/_header
-        
+
         include _includes/_about
-        
-        include _includes/work.html
-        
+
+        include _includes/_work
+
         include _includes/clients.html
-        
+
         include _includes/contact.html
-        
+
         include _includes/form.html
         
-        
+
         include _includes/footer.html
-        
+
         script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
         script(src="assets/js/functions.js")
