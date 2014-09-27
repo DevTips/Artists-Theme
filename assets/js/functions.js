@@ -50,11 +50,10 @@ function  workLoad() {
   $('.thumb-unit').click(function() {
     var $this = $(this),
         newTitle = $this.find('strong').text(),
-        newfolder = $this.data('folder'),
         spinner = '<div class="loader">Loading...</div>',
-        newHTML = 'work/'+ newfolder;
+        filePath = $this.data('filepath');
       
-    $('.project-load').html(spinner).load(newHTML);
+    $('.project-load').html(spinner).load(filePath);
     $('.project-title').text(newTitle);
   });
   

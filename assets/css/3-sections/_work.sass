@@ -46,19 +46,17 @@
     width: 25%
     float: left
     position: relative
-    padding-top: 16%
     cursor: pointer
-    background:
-      position: center center
-      repeat: no-repeat
-      size: cover
     +perspective(300)
     @if $animation != "bounceOut"
       overflow: hidden
+
+    img
+      width: 100%
+      display: block
       
     @media screen and (max-width: 760px)
       width: 50%
-      padding-top: 26%
     
     .thumb-overlay
       +position(absolute)

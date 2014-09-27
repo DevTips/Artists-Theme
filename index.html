@@ -21,16 +21,11 @@
 
 {% include header.html %}
 
-{% include about.html %}
+  {% for section in site.data.layout.sections %}
 
-{% include work.html %}
+    {% include {{ section.name | downcase }}.html %}
 
-{% include clients.html %}
-
-{% include contact.html %}
-
-{% include form.html %}
-
+  {% endfor %}
 
 {% include footer.html %}
 

@@ -1,5 +1,6 @@
 ---
 title: Weather Dashboard
+folder: proj-7
 ---
 
 ![Weather Dashboard](assets/img/work/proj-7/img0.jpg)
