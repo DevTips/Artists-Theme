@@ -1,5 +1,6 @@
 ---
 title: Typo International Design Talks Stuff
+folder: proj-1
 ---
 
 ![Typo International](assets/img/work/proj-1/img1.jpg)

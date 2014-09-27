@@ -1,5 +1,16 @@
 # Layout settings
 
+# Site Sections
+
+sections:
+- {name: About }
+- {name: Work }
+- {name: Clients }
+- {name: Contact }
+- {name: Form }
+
+# Animation Settings
+
 animation: "bounceOut"
 
 # Images
