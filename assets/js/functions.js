@@ -30,7 +30,7 @@ function workBelt() {
   $(".trigger").remove();
   $(".return").remove();
 
-  $('.thumb-unit').click(function() {
+  $('.thumb-container').find('label').on('click', function() {
     $('.work-belt').addClass("slided");
     $('.work-container').show();
   });
@@ -47,10 +47,10 @@ function  workLoad() {
   
   $.ajaxSetup({ cache: true });
   
-  $('.thumb-unit').click(function() {
+  $('.thumb-container').find('label').on('click', function() {
     var $this = $(this),
         newTitle = $this.find('strong').text(),
-        newfolder = $this.data('folder'),
+        newfolder = $this.find('.thumb-unit').data('folder'),
         spinner = '<div class="loader">Loading...</div>',
         newHTML = 'work/'+ newfolder;
       
