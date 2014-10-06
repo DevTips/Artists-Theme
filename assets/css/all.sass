@@ -14,7 +14,7 @@ $logo-path: '{{ site.data.layout.logo }}'
 $hero-path: '{{ site.data.layout.hero }}'
 $avatar-path: '{{ site.data.layout.avatar }}'
 
-$projects: "proj-1", "proj-2", "proj-3", "proj-4", "proj-5", "proj-6", "proj-7", "proj-8"
+$projects: {% for project in site.data.settings.projects %} "{{ project.folder }}", {% endfor %}
 
 //------------------------------------------------
 // Set some colors as sass variables
