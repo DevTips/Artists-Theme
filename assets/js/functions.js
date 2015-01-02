@@ -31,13 +31,15 @@ function workBelt() {
   $(".return").remove();
 
   $('.thumb-unit').click(function() {
-    $('.work-belt').addClass("slided");
-    $('.work-container').show();
+    $.when($('.work-container').show()).then(function() {
+      $('.work-belt').addClass("slided");
+    });
   });
   
   $('.work-return').click(function() {
-    $('.work-belt').removeClass("slided");
-    $('.work-container').hide(800);
+    $.when($('.work-container').hide()).then(function () {
+      $('.work-belt').removeClass("slided");
+    });
   });
 
 }
