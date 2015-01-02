@@ -66,51 +66,34 @@ function  workLoad() {
 
 
 function clientStuff() {
+  var position = 0;
   
-  $('.client-unit').first().addClass('active-client');
-  $('.client-logo').first().addClass('active-client');
-  $('.clients-mobile-nav span').first().addClass('active-client');
-  
+  function setActiveClient() {
+      var activeClass = 'active-client';
+      $('.client-unit').removeClass(activeClass).eq(position).addClass(activeClass);
+      $('.client-logo').removeClass(activeClass).eq(position).addClass(activeClass);
+      $('.clients-mobile-nav span').removeClass(activeClass).eq(position).addClass(activeClass);
+  }
+
+  // Set the first active client
+  setActiveClient();
   
   $('.client-logo, .clients-mobile-nav span').click(function() {
     var $this = $(this),
-        $siblings = $this.parent().children(),
-        position = $siblings.index($this);
-        
-    $('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
-    $siblings.removeClass('active-client');
-    $this.addClass('active-client');
+        $siblings = $this.parent().children();
+
+    position = $siblings.index($this);
+    setActiveClient();
   });
   
+  $('.client-control-next').click(function() {
+    position = (position + 1) % $('.client-unit').length;
+    setActiveClient();
+  });
   
-  $('.client-control-next, .client-control-prev').click(function() {
-  
-    var $this = $(this),
-        curActiveClient = $('.clients-belt').find('.active-client'),
-        position = $('.clients-belt').children().index(curActiveClient),
-        clientNum = $('.client-unit').length;
-        
-      if($this.hasClass('client-control-next')) {
-        
-        if(position < clientNum -1){
-          $('.active-client').removeClass('active-client').next().addClass('active-client');
-        } else {
-          $('.client-unit').removeClass('active-client').first().addClass('active-client');
-          $('.client-logo').removeClass('active-client').first().addClass('active-client');
-        }
-        
-      } else {
-        
-        if (position === 0) {
-          $('.client-unit').removeClass('active-client').last().addClass('active-client');
-          $('.client-logo').removeClass('active-client').last().addClass('active-client');
-        } else {
-          $('.active-client').removeClass('active-client').prev().addClass('active-client');  
-        }
-
-      }
-        
-  
+  $('.client-control-prev').click(function() {
+    position = (position - 1) % $('.client-unit').length;
+    setActiveClient();
   });
   
 }
