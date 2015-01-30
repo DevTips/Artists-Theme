@@ -1,0 +1,8 @@
+header#header
+    nav
+        each link in menu
+            a(href="#{link.url}") #{link.name}    
+    h1
+        span= title
+    
+    .kicker= description

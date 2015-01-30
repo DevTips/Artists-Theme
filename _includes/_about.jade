@@ -1,0 +1,26 @@
+section
+
+    h3#about-me About Myself
+    
+    .face-lockup
+    
+        .face-img
+    
+        .icon-pencil: include icons/icon-pencil.html 
+        .icon-mouse: include icons/icon-mouse.html
+        .icon-browser: include icons/icon-browser.html
+        .icon-video: include icons/icon-video.html
+    
+    
+    
+    .blurb
+        include:markdown _blurb.md        
+    
+    .skill-lockup
+    
+        each skill in skills
+            .skill-unit
+                .skill-label #{skill.name}
+                    .skill-icons .skill-#{skill.value}
+                        - for(i in [1-10])
+                            span

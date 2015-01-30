@@ -1,41 +1,257 @@
----
----
 
-<!DOCTYPE html>
-<html class="">
-<head>
-  <meta charset="UTF-8">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.data.settings.seo.description }}">
-  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
-  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
+<!--NOTE: The Logo and Background image are defined in the all.sass document.-->
+<!--skills:-->
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="{{ site.data.settings.seo.description }}"/>
+    <meta rel="author" href="{{ site.data.settings.seo.rel-author }}"/>
+    <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}"/>
+    <title>Artists Theme</title>
+    <link rel="stylesheet" href="assets/css/all.css"/>
+  </head>
+  <body>
+    <header id="header">
+      <nav><a href="#about-me">About Me    </a><a href="#work">Work    </a><a href="#clients">Clients    </a><a href="#contact">Contact    </a>
+      </nav>
+      <h1><span>Artists Theme</span></h1>
+      <div class="kicker">Thinker // Designer // YouTuber</div>
+    </header>
+    <section>
+      <h3 id="about-me">About Myself</h3>
+      <div class="face-lockup">
+        <div class="face-img"></div>
+        <div class="icon-pencil"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100"><path d="M68.495 32.622c.332-1.051-.787-2.17-1.838-1.838l-12.123 3.823-.009.003-.02.006-.04.018-.213.087-.046.031-.085.056-.189.148-.042.033-18.97 18.97-.001.001-.001.001-4.742 4.742c-.584.584-.592 1.522-.017 2.097l8.32 8.32c.575.575 1.513.567 2.097-.017l4.742-4.742 18.971-18.971.033-.042.148-.188.057-.085.03-.046.086-.212.019-.042.007-.021.003-.008 3.823-12.124zm-6.119 9.592l-3.496-1.815-1.815-3.496 7.756-2.446-2.445 7.757zm-18.081 19.01l-6.24-6.24 16.477-16.477 1.921 3.7c.07.134.158.253.262.357.105.105.224.193.357.262l3.7 1.921-16.477 16.477zm-4.742 4.742l-6.24-6.24 2.629-2.629 6.24 6.24-2.629 2.629z"/></svg>
+        </div>
+        <div class="icon-mouse"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100"><path d="M49.5 74c-8.27 0-15-6.73-15-15v-18c0-8.271 6.729-15 15-15s15 6.73 15 15v18c0 8.271-6.73 15-15 15zm0-45c-6.617 0-12 5.383-12 12v18c0 6.617 5.383 12 12 12s12-5.383 12-12v-18c0-6.617-5.383-12-12-12zm.183 17.53c-2.068 0-3.75-1.681-3.75-3.75v-4.5c0-2.068 1.682-3.75 3.75-3.75s3.75 1.682 3.75 3.75v4.5c0 2.068-1.682 3.75-3.75 3.75zm0-9c-.413 0-.75.337-.75.75v4.5c0 .413.337.75.75.75s.75-.337.75-.75v-4.5c0-.413-.337-.75-.75-.75z"/></svg>
+        </div>
+        <div class="icon-browser"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100"><path d="M72 30.5h-45c-.829 0-1.5.671-1.5 1.5v36c0 .829.671 1.5 1.5 1.5h45c.829 0 1.5-.671 1.5-1.5v-36c0-.829-.671-1.5-1.5-1.5zm-1.5 36h-42v-22.254h42v22.254zm0-25.254h-42v-7.746h42v7.746zm-37.153-2.495c.758 0 1.373-.615 1.373-1.373s-.615-1.373-1.373-1.373-1.373.615-1.373 1.373.615 1.373 1.373 1.373zm5.342 0c.758 0 1.373-.615 1.373-1.373s-.615-1.373-1.373-1.373-1.373.615-1.373 1.373.615 1.373 1.373 1.373zm5.342 0c.758 0 1.373-.615 1.373-1.373s-.615-1.373-1.373-1.373-1.373.615-1.373 1.373.615 1.373 1.373 1.373z"/></svg>
+        </div>
+        <div class="icon-video"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100"><path d="M75 32.5h-51c-.829 0-1.5.671-1.5 1.5v32c0 .829.671 1.5 1.5 1.5h51c.829 0 1.5-.671 1.5-1.5v-32c0-.829-.671-1.5-1.5-1.5zm-1.5 32h-48v-29h48v29zm-31.007-22.995v16.988l14.004-8.494-14.004-8.494z"/></svg>
+        </div>
+      </div>
+      <div class="blurb"><p><strong>Travis specializes in making things</strong> for human people. 
+Most of the things he makes are <a href="http://travisneilson.com">digital interfaces</a>,
+ but he also puts effort into crafting 
+ <a href="http://soundcloud.com/travis-neilson">next-level beats</a> 
+ and <a href="http://youtube.com/user/devtipsfordesigners">YouTube videos</a> 
+ about making codes happen.</p>
 
-  <title>{{ site.data.settings.title }}</title>
+      </div>
+      <div class="skill-lockup">
+        <div class="skill-unit">
+          <div class="skill-label">Communication
+            <div class="skill-icons">.skill-9<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Organization
+            <div class="skill-icons">.skill-7<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Learning
+            <div class="skill-icons">.skill-10<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Teaching
+            <div class="skill-icons">.skill-6<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Planning
+            <div class="skill-icons">.skill-7<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Visual Design
+            <div class="skill-icons">.skill-5<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">UX Design
+            <div class="skill-icons">.skill-8<span></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-unit">
+          <div class="skill-label">Programming
+            <div class="skill-icons">.skill-6<span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="alt-section">section-work</section>
+    <h3 id="work">Work</h3>
+    <input type="radio" name="trigger" id="undefined" class="trigger"/>
+    <input type="radio" name="trigger" id="return" class="return"/>
+    <div class="work-belt">
+      <div class="thumb-wrap">
+        <div class="thumb-container"></div>
+        <label for="undefined">
+          <div data-folder="undefined" style="background-image: url(assets/img/work/undefined/thumb.jpg);" class="thumb-unit">
+            <div class="thumb-overlay"><strong>bob</strong></div>
+          </div>
+        </label>
+      </div>
+      <div class="work-wrap">
+        <div class="work-container"></div>
+        <label for="return">
+          <div class="work-return"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 40 40"><path d="M22.896 29.125c-.256 0-.512-.098-.707-.293l-8.125-8.125c-.391-.391-.391-1.023 0-1.414l8.125-8.125c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-7.418 7.418 7.417 7.418c.391.391.391 1.023 0 1.414-.195.195-.451.293-.706.293zM20 6c7.72 0 14 6.28 14 14s-6.28 14-14 14-14-6.28-14-14 6.28-14 14-14m0-2c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16z"/></svg>
+          </div>
+        </label>
+        <h4 class="project-title"></h4>
+        <div class="project-load"></div>
+      </div>
+      <noscript>
+        <div id="content-undefined" class="noscript"></div>
+        <h4 class="project-title">bob</h4>
+        <div class="noscript-load"></div>
+        <!--include project.file-->
+      </noscript>
+    </div><section class="section-clients">
 
-  <link rel="stylesheet" href="assets/css/all.css">
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <h3 id="clients">Clients</h3>
 
-</head>
-<body>
+  
+  <div class="clients-mobile-nav">
+    {% for client in site.data.settings.clients %}
+    <span></span>
+    {% endfor %}
+  </div>
+  
+  <div class="clients-belt">
+    
+  
+    
+    
+    {% for client in site.data.settings.clients %}
+    <div class="client-unit">
+      
+      <figure class="client-face">
+        <img src="assets/img/clients/{{ client.avatar }}" alt="client-face">
+        <figcaption>
+          <strong class="client-name">{{ client.name }}</strong>
+          <em class="client-title">{{ client.title }}</em>
+        </figcaption>
+      </figure>
+      
+      <div class="client-content">
+        <div class="client-quote-mark">{% include icons/icon-quote-mark.html %}</div>
+        {{ client.quote }}
+      </div>
+      
+    </div>
+    {% endfor %}
+    
+  </div>
+  
+  <div class="client-controls">
+    <div class="client-control-next">{% include icons/icon-next.html %}</div>
+    <div class="client-control-prev">{% include icons/icon-prev.html %}</div>
+  </div>
+  
+  
+  
+  <div class="clients-logos">
+    {% for client in site.data.settings.clients %}
+    <img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+    {% endfor %}
+  </div>
+  
+  
+  
 
-{% include header.html %}
+</section><section class="alt-section section-contact">
+  
+  <h3 id="contact">Contact</h3>
+  
+  
+  <div class="social-links">
+    {% for link in site.data.settings.social %}
+    <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+    {% endfor %}
+  </div>
+  
+  <hr class="bar">
+  
+  <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
+  
+</section><section>
 
-{% include about.html %}
+  <h3>Let's work together</h3>
+  
+<form method="POST" action="//forms.brace.io/{{ site.data.settings.email }}">
+  
+  <div class="contact-info-group">
 
-{% include work.html %}
+    <label><span>Your Name</span>
+    <input type="text" name="name"></label>
+    
+    <label><span>Your Email</span>
+    <input type="email" name="_replyto"></label>
 
-{% include clients.html %}
+  </div>
 
-{% include contact.html %}
+  <label><span>Tell me about your project</span>
+  <textarea name="message"></textarea></label>
 
-{% include form.html %}
+  <div class="submit-wrap">
+    <input type="submit" value="Send">
+  </div>
 
+</form>
+  
+</section>
 
-{% include footer.html %}
+<!-- 
+It gives the responses to a google form, which is in my account but there is a link below to see responses. From tehre you can just 
+cop and paste all the users. I would recomend userss of this actually doing it themselves, though, it's not that hard.
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="assets/js/functions.js"></script>
-<!-- REMEMBER TO ADD ANALYTICS! -->
-</body>
+How To Do:
+1) create google form
+2) click view live form
+3) view source codes
+4) copy everything inside the form tag and paste it below
+5) cut out all the crap
+6) make it pretty
+7) enjoy!
+
+See responses: https://docs.google.com/spreadsheets/d/1PKD_eA15NRi_29M-tm-vpfL3mxIsc030O5JLPTLBNpQ/edit?usp=sharing  -->
+<h3>Get my Newsletter</h1>
+<form id="google-form" action="https://docs.google.com/forms/d/1cxcmmBqeOd5iDakauSrMpBzFxrg7Xmw9suSRxP6lOJs/formResponse" method="POST" target="_self" onsubmit="function(e) {e.preventDefault();}">
+	<label for="entry_705219125">Email Address</label>
+	<input type="text" name="entry.705219125">
+	<input type="submit" value="Sign Me Up!" name="submit">
+</form><footer id="footer">
+
+  <div class="lockup">
+    
+    <div class="content-wrap">
+      <nav>
+        {% for item in site.data.settings.menu %}
+          <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+      
+      <p class="copyright">All content copyright 2014</p>
+    </div>
+    
+  </div>
+
+</footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
 </html>
