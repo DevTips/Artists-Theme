@@ -2,12 +2,6 @@
 
 animation: "bounceOut"
 
-# Images
-
-logo: "logo.svg"
-hero: "hero-bg.jpg"
-avatar: "travitar.jpg"
-
 # Colors
 
 accent: "#c99065"

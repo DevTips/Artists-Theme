@@ -5,7 +5,8 @@ title: Artists Theme
 description: Thinker // Designer // YouTuber
 email: devtipsfordesigners@gmail.com
 
-# NOTE: The Logo and Background image are defined in the all.sass document.
+logo: "logo.svg"
+hero: "hero-bg.jpg"
 
 menu:
 - {name: About Me, url: '#about-me'}
@@ -26,7 +27,7 @@ seo:
 #-------------------------------
 # About Section
 
-# NOTE: The avatar is defined in the all.sass document.
+avatar: "travitar.jpg"
 
 blurb: >
   **Travis specializes in making things** for human people.
