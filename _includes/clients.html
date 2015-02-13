@@ -5,7 +5,11 @@
   
   <div class="clients-mobile-nav">
     {% for client in site.data.settings.clients %}
-    <span></span>
+    	{% if forloop.first %}
+    		<span class="active-client"></span>
+    	{% else %}
+    		<span></span>
+    	{% endif %}
     {% endfor %}
   </div>
   
@@ -15,7 +19,11 @@
     
     
     {% for client in site.data.settings.clients %}
-    <div class="client-unit">
+    {% if forloop.first %}
+    	<div class="client-unit active-client">
+	{% else %}
+		<div class="client-unit">
+	{% endif %}
       
       <figure class="client-face">
         <img src="assets/img/clients/{{ client.avatar }}" alt="client-face">
@@ -41,10 +49,13 @@
   </div>
   
   
-  
   <div class="clients-logos">
     {% for client in site.data.settings.clients %}
-    <img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+	    {% if forloop.first %} 
+	    	<img class="client-logo active-client" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+	    {% else %}
+			<img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+		{% endif %}
     {% endfor %}
   </div>
   
