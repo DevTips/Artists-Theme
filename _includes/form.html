@@ -4,7 +4,7 @@
   
 <form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
   
-  <div class="contact-info-group">
+  <fieldset class="contact-info-group">
 
     <label><span>Your Name</span>
     <input type="text" name="name"></label>
@@ -12,14 +12,14 @@
     <label><span>Your Email</span>
     <input type="email" name="_replyto"></label>
 
-  </div>
+  </fieldset>
 
   <label><span>Tell me about your project</span>
   <textarea name="message"></textarea></label>
 
-  <div class="submit-wrap">
+  <fieldset class="submit-wrap">
     <input type="submit" value="Send">
-  </div>
+  </fieldset>
 
 </form>
   
