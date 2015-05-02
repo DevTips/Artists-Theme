@@ -51,9 +51,9 @@ function  workLoad() {
   $('.thumb-container label').click(function() {
     var $this = $(this),
         newTitle = $this.find('strong').text(),
-        newfolder = $this.find('.thumb-unit').data('folder'),
+        newFolder = $this.find('.thumb-unit').data('folder'),
         spinner = '<div class="loader">Loading...</div>',
-        newHTML = 'work/'+ newfolder;
+        newHTML = 'work/'+ newFolder;
       
     $('.project-load').html(spinner).load(newHTML);
     $('.project-title').text(newTitle);
