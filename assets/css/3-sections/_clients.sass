@@ -17,7 +17,7 @@
       @extend %#{$animation}
     
     .client-face
-      min-width: 300px
+      min-width: 180px
       text-align: center
       
       img
@@ -103,7 +103,7 @@
 .clients-mobile-nav
   text-align: center
   position: relative
-  z-index: 2
+  z-index: 3
   display: none
   
   span
@@ -120,7 +120,7 @@
     
     
 
-@media (max-width: 750px)
+@media (max-width: 850px)
   .clients-logos
     +flex-wrap(wrap)
   
@@ -130,7 +130,7 @@
     .client-unit.active-client
       display: block
       position: relative
-      margin-left: 0px
+      margin-left: auto
       left: auto
     
       .client-face
@@ -143,9 +143,6 @@
       
       .client-quote-mark
         left: 6px
-
-  .client-controls
-    display: none
   
   .clients-logos
     display: none
@@ -154,9 +151,7 @@
     display: block
     
     
-    
-    
-    
-    
-    
+@media (max-width: 600px)
+  .client-controls
+    display: none
     
