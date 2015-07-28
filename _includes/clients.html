@@ -4,11 +4,7 @@
 
   <div class="clients-mobile-nav">
     {% for client in site.data.settings.clients %}
-      {% if forloop.first %}
-        <span class="active-client"></span>
-      {% else %}
-        <span></span>
-      {% endif %}
+        <span class="client-button {% if forloop.first %}active-client{% endif %}"></span>
     {% endfor %}
   </div>
 
@@ -40,11 +36,7 @@
 
   <div class="clients-logos">
     {% for client in site.data.settings.clients %}
-      {% if forloop.first %}
-        <img class="client-logo active-client" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
-      {% else %}
-        <img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
-      {% endif %}
+        <img class="client-logo {% if forloop.first %}active-client{% endif %}" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
     {% endfor %}
   </div>
 

@@ -66,14 +66,13 @@ function  workLoad() {
 
 function clientStuff() {
   
-  $('.client-logo, .clients-mobile-nav span').click(function() {
+  $('.client-logo, .client-button').click(function() {
     var $this = $(this),
-        $siblings = $this.parent().children(),
-        position = $siblings.index($this);
+        position = $this.parent().children().index($this);
         
     $('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
-    $siblings.removeClass('active-client');
-    $this.addClass('active-client');
+    $('.client-logo').removeClass('active-client').eq(position).addClass('active-client');
+    $('.client-button').removeClass('active-client').eq(position).addClass('active-client');
   });
   
   
@@ -91,6 +90,7 @@ function clientStuff() {
         } else {
           $('.client-unit').removeClass('active-client').first().addClass('active-client');
           $('.client-logo').removeClass('active-client').first().addClass('active-client');
+          $('.client-button').removeClass('active-client').first().addClass('active-client');
         }
         
       } else {
@@ -98,6 +98,7 @@ function clientStuff() {
         if (position === 0) {
           $('.client-unit').removeClass('active-client').last().addClass('active-client');
           $('.client-logo').removeClass('active-client').last().addClass('active-client');
+          $('.client-button').removeClass('active-client').last().addClass('active-client');
         } else {
           $('.active-client').removeClass('active-client').prev().addClass('active-client');  
         }
