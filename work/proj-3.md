@@ -2,4 +2,4 @@
 title: Crispy Icons
 ---
 
-![Crispy Icons](assets/img/work/proj-3/CrispyIcons-PetrasNargela.jpg)
+![Crispy Icons]({{ site.github.url }}/assets/img/work/proj-3/CrispyIcons-PetrasNargela.jpg)

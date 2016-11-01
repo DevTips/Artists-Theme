@@ -13,7 +13,7 @@
       <div class="client-unit {% if forloop.first %}active-client{% endif %}">
 
         <figure class="client-face">
-          <img src="assets/img/clients/{{ client.avatar }}" alt="client-face">
+          <img src="{{ site.github.url }}/assets/img/clients/{{ client.avatar }}" alt="client-face">
           <figcaption>
             <strong class="client-name">{{ client.name }}</strong>
             <em class="client-title">{{ client.title }}</em>
@@ -36,7 +36,7 @@
 
   <div class="clients-logos">
     {% for client in site.data.settings.clients %}
-        <img class="client-logo {% if forloop.first %}active-client{% endif %}" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+        <img class="client-logo {% if forloop.first %}active-client{% endif %}" src="{{ site.github.url }}/assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
     {% endfor %}
   </div>
 
