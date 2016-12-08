@@ -1,14 +1,14 @@
 #-------------------------------
 # General Site Settings
 
-title: Artists Theme
-description: Thinker // Designer // YouTuber
-email: devtipsfordesigners@gmail.com
+title: Henson Show Designs
+description: Creativity || Imagination || Quality
+email: jmichaelhenson@yahoo.com
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
 menu:
-- {name: About Me, url: '#about-me'}
+- {name: About, url: '#about-me'}
 - {name: Work, url: '#work'}
 - {name: Clients, url: '#clients'}
 - {name: Contact, url: '#contact'}
@@ -19,9 +19,17 @@ menu:
 # NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'Provide a description for your website to make it visible to search engines.'
-  rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
-  rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+  description: 'At Henson Show Designs, we strive to provide our customers with custom, innovative,
+  and engaging shows and services for all levels and ensembles of the marching arts. By utilizing
+  communication between all parties involved, we tailor the design and creative process to the needs
+  and goals of the performers to develop an affordable production you and your students can be proud of.
+  To protect the originality of each production, Henson Show Designs offers Performance Exclusivity.
+  When you commission a custom show from us, you will retain the exclusive, world-wide performance rights
+  for that show for one academic year. When you purchase a previously commissioned show, you will retain
+  the exclusive performance rights for that show in your competition circuits for one academic year.
+  We strive to bring Creativity, Imagination, and Quality to your production!'
+  rel-author: 'https://plus.google.com/u/0/+JMHenson2010/'
+  rel-publisher: 'https://plus.google.com/u/0/+JMHenson2010/'
 
 #-------------------------------
 # Google Analytics Section
@@ -39,21 +47,11 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Travis specializes in making things** for human people.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com){:target="_blank"},
-  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
-  and [YouTube videos](http://youtube.com/user/devtipsfordesigners){:target="_blank"} about making codes happen.
-
+  **Michael Henson is an active designer**, choreographer, and adjudicator in the marching arts.
+  By tailoring the design and creative process to the needs and goals of each individual program,
+  he is able to provide custom, innovative, and engaging shows and services for all levels and ensembles.
 
 skills:
-- {name: Communication, value: '9'}
-- {name: Organization, value: '7'}
-- {name: Learning, value: '10'}
-- {name: Teaching, value: '6'}
-- {name: Planning, value: '7'}
-- {name: Visual Design, value: '5'}
-- {name: UX Design, value: '8'}
-- {name: Programming, value: '6'}
 
 #-------------------------------
 # Work Section
@@ -101,11 +99,6 @@ clients:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
-- {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
-- {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
-- {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/travisneilson/'}
 
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
