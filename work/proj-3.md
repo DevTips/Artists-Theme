@@ -2,7 +2,7 @@
 
 ---
 
-![Crispy Icons]({{ site.github.url }}/assets/img/work/proj-3/thumb.jpg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UQK7m95n5jg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Colorguard Design
 

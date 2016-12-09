@@ -2,7 +2,7 @@
 
 ---
 
-![City In]({{ site.github.url }}/assets/img/work/proj-2/thumb.jpg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lXLM6H_UxX0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Program Consultation and Wind Arranging
 
