@@ -1,9 +1,10 @@
 #-------------------------------
 # General Site Settings
 
-title: Artists Theme
-description: Thinker // Designer // YouTuber
-email: devtipsfordesigners@gmail.com
+title: Eddie Garcia
+description:  Designer // Developer // Digital Marketer
+email: fasteddiegarcia@gmail.com
+phone: 512.903.9030
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
@@ -11,6 +12,7 @@ menu:
 - {name: About Me, url: '#about-me'}
 - {name: Work, url: '#work'}
 - {name: Clients, url: '#clients'}
+# - {name: Blog, url: '#blog'}
 - {name: Contact, url: '#contact'}
 
 #-------------------------------
@@ -19,7 +21,7 @@ menu:
 # NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'Provide a description for your website to make it visible to search engines.'
+  description: 'Online Portfolio for Eddie Garcia - Designer, Developer, Digital Marketer.'
   rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
   rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
 
@@ -39,17 +41,19 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Travis specializes in making things** for human people.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com){:target="_blank"},
-  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
-  and [YouTube videos](http://youtube.com/user/devtipsfordesigners){:target="_blank"} about making codes happen.
+  **Eddie specializes in making things** for human people.
+  Most of the things he makes are digital interfaces and the digital marketing geared to showcase those efforts,
+  but he also puts effort into crafting next-level cocktail menus.
 
+
+
+# Markdown link example : [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
 
 skills:
 - {name: Communication, value: '9'}
-- {name: Organization, value: '7'}
+- {name: Organization, value: '8'}
 - {name: Learning, value: '10'}
-- {name: Teaching, value: '6'}
+- {name: Teaching, value: '7'}
 - {name: Planning, value: '7'}
 - {name: Visual Design, value: '5'}
 - {name: UX Design, value: '8'}
@@ -101,11 +105,13 @@ clients:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
-- {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
-- {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
-- {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/travisneilson/'}
-
+- {icon: 'github', link: 'https://github.com/fasteddiegarcia'}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/fasteddiegarcia/'}
+- {icon: 'twitter', link: 'http://twitter.com/fasteddieaustin'}
+# - {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
+# - {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
+# - {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
+# - {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
+# - {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
