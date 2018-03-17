@@ -67,7 +67,9 @@
       background: fade-out($accent, 0.1)
       text-align: center
       @extend %animationstart_#{$animation}
-
+      @for $i from 1 through 8
+       &.proj-#{$i}
+        background-image: url(/assets/img/work/proj-#{$i}/thumb.jpg)
       strong
         display: block
         padding: 0 9%
