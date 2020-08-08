@@ -3,7 +3,7 @@
 
 title: Pearl Pugh
 description: Thinker // Designer // YouTuber
-email: devtipsfordesigners@gmail.com
+email: Pugh.pearl@yahoo.com
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
@@ -101,11 +101,9 @@ clients:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
-- {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
-- {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
-- {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/travisneilson/'}
+- {icon: 'facebook', link: 'https://www.facebook.com/pearl.clark.9'}
+- {icon: 'instagram', link: 'https://www.instagram.com/pugh.pearl/'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/pearl-clark-90080932?trk=people-guest_people_search-card'}
 
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
